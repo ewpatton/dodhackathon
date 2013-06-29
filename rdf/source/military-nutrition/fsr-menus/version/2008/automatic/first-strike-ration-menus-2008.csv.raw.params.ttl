@@ -8,13 +8,13 @@
 @prefix foaf:          <http://xmlns.com/foaf/0.1/> .
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
-@prefix :              <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2008/params/raw/> .
+@prefix :              <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2008/params/raw/> .
 
 
-<https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2008/conversion/raw>
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2008/conversion/raw>
    a conversion:LayerDataset, void:Dataset;
 
-   conversion:base_uri           "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#"^^xsd:anyURI;
+   conversion:base_uri           "https://github.com/ewpatton/dodhackathon/tree/master/rdf"^^xsd:anyURI;
    conversion:source_identifier  "military-nutrition";
    conversion:dataset_identifier "fsr-menus";
    conversion:version_identifier "2008";

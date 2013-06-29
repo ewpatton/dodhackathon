@@ -5,9 +5,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
 @prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
-@prefix tw_service: <https://github.com/ewpatton/dodhackathon/rdf/source/tw-rpi-edu/service/> .
-@prefix tw_converter: <https://github.com/ewpatton/dodhackathon/rdf/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
-@prefix provenance_raw: <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/provenance/fsr-menus/version/2012/conversion/raw/> .
+@prefix tw_service: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/provenance/fsr-menus/version/2012/conversion/raw/> .
 @prefix conversion: <http://purl.org/twc/vocab/conversion/> .
 @prefix ov: <http://open.vocab.org/terms/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -19,19 +19,19 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
 @prefix coin: <http://purl.org/court/def/2009/coin#> .
-@prefix fsr-menus: <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/> .
-@prefix military-nutrition_vocab: <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/vocab/> .
-@prefix base_vocab: <https://github.com/ewpatton/dodhackathon/rdf/vocab/> .
-@prefix fsr-menus_vocab: <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/vocab/> .
-@prefix raw: <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/vocab/raw/> .
-@prefix fsr-menus_global_value: <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/> .
+@prefix fsr-menus: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/> .
+@prefix military-nutrition_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/vocab/> .
+@prefix base_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/vocab/> .
+@prefix fsr-menus_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/vocab/> .
+@prefix raw: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/vocab/raw/> .
+@prefix fsr-menus_global_value: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/> .
 @prefix sioc: <http://rdfs.org/sioc/ns#> .
 
 raw:carbohydrates_g a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "1"^^xsd:integer ;
 	ov:csvHeader "CARBOHYDRATES_G" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "CARBOHYDRATES_G" ;
 	rdfs:range rdfs:Literal .
 
@@ -39,7 +39,7 @@ raw:calcium_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "2"^^xsd:integer ;
 	ov:csvHeader "CALCIUM_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "CALCIUM_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -47,7 +47,7 @@ raw:sodium_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "3"^^xsd:integer ;
 	ov:csvHeader "SODIUM_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "SODIUM_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -55,7 +55,7 @@ raw:calcium_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "4"^^xsd:integer ;
 	ov:csvHeader "CALCIUM_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "CALCIUM_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -63,7 +63,7 @@ raw:item a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "5"^^xsd:integer ;
 	ov:csvHeader "ITEM" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "ITEM" ;
 	rdfs:range rdfs:Literal .
 
@@ -71,7 +71,7 @@ raw:sugars_g a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "6"^^xsd:integer ;
 	ov:csvHeader "SUGARS_G" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "SUGARS_G" ;
 	rdfs:range rdfs:Literal .
 
@@ -79,7 +79,7 @@ raw:iron_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "7"^^xsd:integer ;
 	ov:csvHeader "IRON_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "IRON_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -87,7 +87,7 @@ raw:totalfat_g a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "8"^^xsd:integer ;
 	ov:csvHeader "TOTALFAT_G" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "TOTALFAT_G" ;
 	rdfs:range rdfs:Literal .
 
@@ -95,7 +95,7 @@ raw:vitamine_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "9"^^xsd:integer ;
 	ov:csvHeader "VITAMINE_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "VITAMINE_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -103,7 +103,7 @@ raw:vitaminb6_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "10"^^xsd:integer ;
 	ov:csvHeader "VITAMINB6_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "VITAMINB6_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -111,7 +111,7 @@ raw:carbohydrates_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "11"^^xsd:integer ;
 	ov:csvHeader "CARBOHYDRATES_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "CARBOHYDRATES_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -119,7 +119,7 @@ raw:calories a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "12"^^xsd:integer ;
 	ov:csvHeader "CALORIES" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "CALORIES" ;
 	rdfs:range rdfs:Literal .
 
@@ -127,7 +127,7 @@ raw:saturatedfat_g a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "13"^^xsd:integer ;
 	ov:csvHeader "SATURATEDFAT_G" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "SATURATEDFAT_G" ;
 	rdfs:range rdfs:Literal .
 
@@ -135,7 +135,7 @@ raw:weight a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "14"^^xsd:integer ;
 	ov:csvHeader "WEIGHT" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "WEIGHT" ;
 	rdfs:range rdfs:Literal .
 
@@ -143,7 +143,7 @@ raw:saturatedfat_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "15"^^xsd:integer ;
 	ov:csvHeader "SATURATEDFAT_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "SATURATEDFAT_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -151,7 +151,7 @@ raw:dietaryfiber_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "16"^^xsd:integer ;
 	ov:csvHeader "DIETARYFIBER_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "DIETARYFIBER_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -159,7 +159,7 @@ raw:selenium_mcg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "17"^^xsd:integer ;
 	ov:csvHeader "SELENIUM_MCG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "SELENIUM_MCG" ;
 	rdfs:range rdfs:Literal .
 
@@ -167,7 +167,7 @@ raw:vitaminb12_mcg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "18"^^xsd:integer ;
 	ov:csvHeader "VITAMINB12_MCG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "VITAMINB12_MCG" ;
 	rdfs:range rdfs:Literal .
 
@@ -175,7 +175,7 @@ raw:cholesterol_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "19"^^xsd:integer ;
 	ov:csvHeader "CHOLESTEROL_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "CHOLESTEROL_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -183,7 +183,7 @@ raw:thiamin_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "20"^^xsd:integer ;
 	ov:csvHeader "THIAMIN_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "THIAMIN_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -191,7 +191,7 @@ raw:folicacid_mcg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "21"^^xsd:integer ;
 	ov:csvHeader "FOLICACID_MCG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "FOLICACID_MCG" ;
 	rdfs:range rdfs:Literal .
 
@@ -199,7 +199,7 @@ raw:vitaminc_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "22"^^xsd:integer ;
 	ov:csvHeader "VITAMINC_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "VITAMINC_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -207,7 +207,7 @@ raw:dietaryfiber_g a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "23"^^xsd:integer ;
 	ov:csvHeader "DIETARYFIBER_G" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "DIETARYFIBER_G" ;
 	rdfs:range rdfs:Literal .
 
@@ -215,7 +215,7 @@ raw:ration a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "24"^^xsd:integer ;
 	ov:csvHeader "RATION" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "RATION" ;
 	rdfs:range rdfs:Literal .
 
@@ -223,7 +223,7 @@ raw:phosphorous_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "25"^^xsd:integer ;
 	ov:csvHeader "PHOSPHOROUS_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "PHOSPHOROUS_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -231,7 +231,7 @@ raw:magnesium_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "26"^^xsd:integer ;
 	ov:csvHeader "MAGNESIUM_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "MAGNESIUM_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -239,7 +239,7 @@ raw:sodium_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "27"^^xsd:integer ;
 	ov:csvHeader "SODIUM_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "SODIUM_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -247,7 +247,7 @@ raw:potassium_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "28"^^xsd:integer ;
 	ov:csvHeader "POTASSIUM_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "POTASSIUM_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -255,7 +255,7 @@ raw:vitamina_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "29"^^xsd:integer ;
 	ov:csvHeader "VITAMINA_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "VITAMINA_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -263,7 +263,7 @@ raw:iron_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "30"^^xsd:integer ;
 	ov:csvHeader "IRON_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "IRON_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -271,7 +271,7 @@ raw:niacin_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "31"^^xsd:integer ;
 	ov:csvHeader "NIACIN_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "NIACIN_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -279,7 +279,7 @@ raw:totalfat_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "32"^^xsd:integer ;
 	ov:csvHeader "TOTALFAT_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "TOTALFAT_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -287,7 +287,7 @@ raw:menu a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "33"^^xsd:integer ;
 	ov:csvHeader "MENU" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "MENU" ;
 	rdfs:range rdfs:Literal .
 
@@ -295,7 +295,7 @@ raw:riboflavin_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "34"^^xsd:integer ;
 	ov:csvHeader "RIBOFLAVIN_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "RIBOFLAVIN_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -303,7 +303,7 @@ raw:protein_g a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "35"^^xsd:integer ;
 	ov:csvHeader "PROTEIN_G" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "PROTEIN_G" ;
 	rdfs:range rdfs:Literal .
 
@@ -311,7 +311,7 @@ raw:transfat_g a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "36"^^xsd:integer ;
 	ov:csvHeader "TRANSFAT_G" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "TRANSFAT_G" ;
 	rdfs:range rdfs:Literal .
 
@@ -319,7 +319,7 @@ raw:cholesterol_dv a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "37"^^xsd:integer ;
 	ov:csvHeader "CHOLESTEROL_DV" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "CHOLESTEROL_DV" ;
 	rdfs:range rdfs:Literal .
 
@@ -327,7 +327,7 @@ raw:vitaminc_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "38"^^xsd:integer ;
 	ov:csvHeader "VITAMINC_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "VITAMINC_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -335,7 +335,7 @@ raw:vitamina_iu a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "39"^^xsd:integer ;
 	ov:csvHeader "VITAMINA_IU" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "VITAMINA_IU" ;
 	rdfs:range rdfs:Literal .
 
@@ -343,7 +343,7 @@ raw:zinc_mg a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "40"^^xsd:integer ;
 	ov:csvHeader "ZINC_MG" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "ZINC_MG" ;
 	rdfs:range rdfs:Literal .
 
@@ -351,12 +351,12 @@ raw:itemtype a rdf:Property ;
 	ov:csvRow "1"^^xsd:integer ;
 	ov:csvCol "41"^^xsd:integer ;
 	ov:csvHeader "ITEMTYPE" ;
-	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw> ;
 	rdfs:label "ITEMTYPE" ;
 	rdfs:range rdfs:Literal .
 
-fsr-menus:thing_2 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_2 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "37.31" ;
 	raw:calcium_dv ".07" ;
 	raw:sodium_mg "687.28" ;
@@ -400,8 +400,8 @@ fsr-menus:thing_2 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackath
 	raw:itemtype "Entree" ;
 	ov:csvRow "2"^^xsd:integer .
 
-fsr-menus:thing_3 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_3 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "25.27" ;
 	raw:calcium_dv ".05" ;
 	raw:sodium_mg "571.9" ;
@@ -445,8 +445,8 @@ fsr-menus:thing_3 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackath
 	raw:itemtype "Entree" ;
 	ov:csvRow "3"^^xsd:integer .
 
-fsr-menus:thing_4 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_4 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "22.26" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "403.2" ;
@@ -490,8 +490,8 @@ fsr-menus:thing_4 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackath
 	raw:itemtype "Snack" ;
 	ov:csvRow "4"^^xsd:integer .
 
-fsr-menus:thing_5 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_5 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "16.12" ;
 	raw:calcium_dv ".08" ;
 	raw:sodium_mg "37.08" ;
@@ -535,8 +535,8 @@ fsr-menus:thing_5 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackath
 	raw:itemtype "Snack" ;
 	ov:csvRow "5"^^xsd:integer .
 
-fsr-menus:thing_6 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_6 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "5.51" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "608.4" ;
@@ -580,8 +580,8 @@ fsr-menus:thing_6 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackath
 	raw:itemtype "Snack" ;
 	ov:csvRow "6"^^xsd:integer .
 
-fsr-menus:thing_7 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_7 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4.91" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "564.2" ;
@@ -625,8 +625,8 @@ fsr-menus:thing_7 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackath
 	raw:itemtype "Snack" ;
 	ov:csvRow "7"^^xsd:integer .
 
-fsr-menus:thing_8 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_8 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "52.27" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "305.91" ;
@@ -670,8 +670,8 @@ fsr-menus:thing_8 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackath
 	raw:itemtype "Snack" ;
 	ov:csvRow "8"^^xsd:integer .
 
-fsr-menus:thing_9 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_9 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "18.42" ;
 	raw:calcium_dv ".04" ;
 	raw:sodium_mg "5.6" ;
@@ -715,8 +715,8 @@ fsr-menus:thing_9 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackath
 	raw:itemtype "Snack" ;
 	ov:csvRow "9"^^xsd:integer .
 
-fsr-menus:thing_10 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_10 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "24.26" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "18.1" ;
@@ -760,8 +760,8 @@ fsr-menus:thing_10 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "10"^^xsd:integer .
 
-fsr-menus:thing_11 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_11 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "32.43" ;
 	raw:calcium_dv ".17" ;
 	raw:sodium_mg "369.36" ;
@@ -805,8 +805,8 @@ fsr-menus:thing_11 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "11"^^xsd:integer .
 
-fsr-menus:thing_12 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_12 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4.41" ;
 	raw:calcium_dv ".16" ;
 	raw:sodium_mg "607.05" ;
@@ -850,8 +850,8 @@ fsr-menus:thing_12 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Spread" ;
 	ov:csvRow "12"^^xsd:integer .
 
-fsr-menus:thing_13 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_13 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -895,8 +895,8 @@ fsr-menus:thing_13 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Candy" ;
 	ov:csvRow "13"^^xsd:integer .
 
-fsr-menus:thing_14 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_14 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "50.52" ;
 	raw:calcium_dv ".27" ;
 	raw:sodium_mg "230.3" ;
@@ -940,8 +940,8 @@ fsr-menus:thing_14 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Beverage" ;
 	ov:csvRow "14"^^xsd:integer .
 
-fsr-menus:thing_15 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_15 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -985,8 +985,8 @@ fsr-menus:thing_15 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Beverage" ;
 	ov:csvRow "15"^^xsd:integer .
 
-fsr-menus:thing_16 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_16 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "31.46" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "12.5" ;
@@ -1030,8 +1030,8 @@ fsr-menus:thing_16 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Fruit" ;
 	ov:csvRow "16"^^xsd:integer .
 
-fsr-menus:thing_17 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_17 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -1075,8 +1075,8 @@ fsr-menus:thing_17 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Accessory Pkt" ;
 	ov:csvRow "17"^^xsd:integer .
 
-fsr-menus:thing_18 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_18 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "379.69" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "4508.77" ;
@@ -1120,8 +1120,8 @@ fsr-menus:thing_18 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Total" ;
 	ov:csvRow "18"^^xsd:integer .
 
-fsr-menus:thing_19 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_19 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "38.9" ;
 	raw:calcium_dv ".09" ;
 	raw:sodium_mg "727" ;
@@ -1165,8 +1165,8 @@ fsr-menus:thing_19 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Entree" ;
 	ov:csvRow "19"^^xsd:integer .
 
-fsr-menus:thing_20 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_20 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.96" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "740.88" ;
@@ -1210,8 +1210,8 @@ fsr-menus:thing_20 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Entree" ;
 	ov:csvRow "20"^^xsd:integer .
 
-fsr-menus:thing_21 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_21 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "35.31" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "164.09" ;
@@ -1255,8 +1255,8 @@ fsr-menus:thing_21 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "21"^^xsd:integer .
 
-fsr-menus:thing_22 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_22 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "21.6" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "23.52" ;
@@ -1300,8 +1300,8 @@ fsr-menus:thing_22 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "22"^^xsd:integer .
 
-fsr-menus:thing_23 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_23 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "25.55" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "37.8" ;
@@ -1345,8 +1345,8 @@ fsr-menus:thing_23 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "23"^^xsd:integer .
 
-fsr-menus:thing_24 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_24 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4.91" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "564.2" ;
@@ -1390,8 +1390,8 @@ fsr-menus:thing_24 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "24"^^xsd:integer .
 
-fsr-menus:thing_25 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_25 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "5.51" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "608.4" ;
@@ -1435,8 +1435,8 @@ fsr-menus:thing_25 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "25"^^xsd:integer .
 
-fsr-menus:thing_26 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_26 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "3.33" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "14.86" ;
@@ -1480,8 +1480,8 @@ fsr-menus:thing_26 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "26"^^xsd:integer .
 
-fsr-menus:thing_27 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_27 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "33.05" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "431.52" ;
@@ -1525,8 +1525,8 @@ fsr-menus:thing_27 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "27"^^xsd:integer .
 
-fsr-menus:thing_28 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_28 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "27.54" ;
 	raw:calcium_dv ".22" ;
 	raw:sodium_mg "169.99" ;
@@ -1570,8 +1570,8 @@ fsr-menus:thing_28 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "28"^^xsd:integer .
 
-fsr-menus:thing_29 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_29 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10.8" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "207.83" ;
@@ -1615,8 +1615,8 @@ fsr-menus:thing_29 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Spread" ;
 	ov:csvRow "29"^^xsd:integer .
 
-fsr-menus:thing_30 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_30 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -1660,8 +1660,8 @@ fsr-menus:thing_30 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Candy" ;
 	ov:csvRow "30"^^xsd:integer .
 
-fsr-menus:thing_31 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_31 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -1705,8 +1705,8 @@ fsr-menus:thing_31 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Candy" ;
 	ov:csvRow "31"^^xsd:integer .
 
-fsr-menus:thing_32 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_32 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "11.94" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "207.52" ;
@@ -1750,8 +1750,8 @@ fsr-menus:thing_32 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Condiment" ;
 	ov:csvRow "32"^^xsd:integer .
 
-fsr-menus:thing_33 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_33 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g ".04" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "22.6" ;
@@ -1795,8 +1795,8 @@ fsr-menus:thing_33 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Condiment" ;
 	ov:csvRow "33"^^xsd:integer .
 
-fsr-menus:thing_34 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_34 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -1840,8 +1840,8 @@ fsr-menus:thing_34 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Beverage" ;
 	ov:csvRow "34"^^xsd:integer .
 
-fsr-menus:thing_35 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_35 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -1885,8 +1885,8 @@ fsr-menus:thing_35 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Beverage" ;
 	ov:csvRow "35"^^xsd:integer .
 
-fsr-menus:thing_36 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_36 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "35.58" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "15.23" ;
@@ -1930,8 +1930,8 @@ fsr-menus:thing_36 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Fruit" ;
 	ov:csvRow "36"^^xsd:integer .
 
-fsr-menus:thing_37 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_37 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "46.98" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "21" ;
@@ -1975,8 +1975,8 @@ fsr-menus:thing_37 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Fruit" ;
 	ov:csvRow "37"^^xsd:integer .
 
-fsr-menus:thing_38 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_38 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2.75" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "23.55" ;
@@ -2020,8 +2020,8 @@ fsr-menus:thing_38 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet B" ;
 	ov:csvRow "38"^^xsd:integer .
 
-fsr-menus:thing_39 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_39 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -2065,8 +2065,8 @@ fsr-menus:thing_39 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet B" ;
 	ov:csvRow "39"^^xsd:integer .
 
-fsr-menus:thing_40 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_40 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "0" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -2110,8 +2110,8 @@ fsr-menus:thing_40 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet B" ;
 	ov:csvRow "40"^^xsd:integer .
 
-fsr-menus:thing_41 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_41 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.58" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "786.94" ;
@@ -2155,8 +2155,8 @@ fsr-menus:thing_41 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet B" ;
 	ov:csvRow "41"^^xsd:integer .
 
-fsr-menus:thing_42 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_42 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "409.66" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "4919.16" ;
@@ -2200,8 +2200,8 @@ fsr-menus:thing_42 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Total" ;
 	ov:csvRow "42"^^xsd:integer .
 
-fsr-menus:thing_43 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_43 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "41.3" ;
 	raw:calcium_dv ".08" ;
 	raw:sodium_mg "666" ;
@@ -2245,8 +2245,8 @@ fsr-menus:thing_43 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Entree" ;
 	ov:csvRow "43"^^xsd:integer .
 
-fsr-menus:thing_44 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_44 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "3.2" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "465.92" ;
@@ -2290,8 +2290,8 @@ fsr-menus:thing_44 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Entree" ;
 	ov:csvRow "44"^^xsd:integer .
 
-fsr-menus:thing_45 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_45 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "38.85" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "235.2" ;
@@ -2335,8 +2335,8 @@ fsr-menus:thing_45 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "45"^^xsd:integer .
 
-fsr-menus:thing_46 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_46 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "17.52" ;
 	raw:calcium_dv ".08" ;
 	raw:sodium_mg "48.8" ;
@@ -2380,8 +2380,8 @@ fsr-menus:thing_46 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "46"^^xsd:integer .
 
-fsr-menus:thing_47 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_47 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "24.94" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "26.2" ;
@@ -2425,8 +2425,8 @@ fsr-menus:thing_47 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "47"^^xsd:integer .
 
-fsr-menus:thing_48 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_48 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.12" ;
 	raw:calcium_dv ".03" ;
 	raw:sodium_mg "205.2" ;
@@ -2470,8 +2470,8 @@ fsr-menus:thing_48 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "48"^^xsd:integer .
 
-fsr-menus:thing_49 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_49 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "18.42" ;
 	raw:calcium_dv ".04" ;
 	raw:sodium_mg "5.6" ;
@@ -2515,8 +2515,8 @@ fsr-menus:thing_49 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "49"^^xsd:integer .
 
-fsr-menus:thing_50 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_50 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "26.99" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "47.43" ;
@@ -2560,8 +2560,8 @@ fsr-menus:thing_50 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "50"^^xsd:integer .
 
-fsr-menus:thing_51 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_51 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "33.05" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "431.52" ;
@@ -2605,8 +2605,8 @@ fsr-menus:thing_51 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "51"^^xsd:integer .
 
-fsr-menus:thing_52 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_52 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "27.54" ;
 	raw:calcium_dv ".22" ;
 	raw:sodium_mg "169.99" ;
@@ -2650,8 +2650,8 @@ fsr-menus:thing_52 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "52"^^xsd:integer .
 
-fsr-menus:thing_53 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_53 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "3.7" ;
 	raw:calcium_dv ".16" ;
 	raw:sodium_mg "612" ;
@@ -2695,8 +2695,8 @@ fsr-menus:thing_53 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Spread" ;
 	ov:csvRow "53"^^xsd:integer .
 
-fsr-menus:thing_54 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_54 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -2740,8 +2740,8 @@ fsr-menus:thing_54 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Candy" ;
 	ov:csvRow "54"^^xsd:integer .
 
-fsr-menus:thing_55 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_55 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "12" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "150" ;
@@ -2785,8 +2785,8 @@ fsr-menus:thing_55 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Candy" ;
 	ov:csvRow "55"^^xsd:integer .
 
-fsr-menus:thing_56 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_56 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4.99" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "257.13" ;
@@ -2830,8 +2830,8 @@ fsr-menus:thing_56 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Condiment" ;
 	ov:csvRow "56"^^xsd:integer .
 
-fsr-menus:thing_57 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_57 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g ".04" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "22.6" ;
@@ -2875,8 +2875,8 @@ fsr-menus:thing_57 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Condiment" ;
 	ov:csvRow "57"^^xsd:integer .
 
-fsr-menus:thing_58 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_58 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -2920,8 +2920,8 @@ fsr-menus:thing_58 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Beverage" ;
 	ov:csvRow "58"^^xsd:integer .
 
-fsr-menus:thing_59 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_59 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -2965,8 +2965,8 @@ fsr-menus:thing_59 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Beverage" ;
 	ov:csvRow "59"^^xsd:integer .
 
-fsr-menus:thing_60 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_60 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "35.58" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "15.23" ;
@@ -3010,8 +3010,8 @@ fsr-menus:thing_60 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Fruit" ;
 	ov:csvRow "60"^^xsd:integer .
 
-fsr-menus:thing_61 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_61 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -3055,8 +3055,8 @@ fsr-menus:thing_61 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "61"^^xsd:integer .
 
-fsr-menus:thing_62 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_62 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.09" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "2.35" ;
@@ -3100,8 +3100,8 @@ fsr-menus:thing_62 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "62"^^xsd:integer .
 
-fsr-menus:thing_63 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_63 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2.08" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "8.5" ;
@@ -3145,8 +3145,8 @@ fsr-menus:thing_63 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "63"^^xsd:integer .
 
-fsr-menus:thing_64 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_64 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "0" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -3190,8 +3190,8 @@ fsr-menus:thing_64 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "64"^^xsd:integer .
 
-fsr-menus:thing_65 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_65 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "0" ;
@@ -3235,8 +3235,8 @@ fsr-menus:thing_65 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "65"^^xsd:integer .
 
-fsr-menus:thing_66 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_66 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.82" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "390.67" ;
@@ -3280,8 +3280,8 @@ fsr-menus:thing_66 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "66"^^xsd:integer .
 
-fsr-menus:thing_67 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_67 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "427.14" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "3925.27" ;
@@ -3325,8 +3325,8 @@ fsr-menus:thing_67 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Total" ;
 	ov:csvRow "67"^^xsd:integer .
 
-fsr-menus:thing_68 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_68 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "51.21" ;
 	raw:calcium_dv ".13" ;
 	raw:sodium_mg "1287.5" ;
@@ -3370,8 +3370,8 @@ fsr-menus:thing_68 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Entree" ;
 	ov:csvRow "68"^^xsd:integer .
 
-fsr-menus:thing_69 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_69 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "8.83" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "520.93" ;
@@ -3415,8 +3415,8 @@ fsr-menus:thing_69 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Entree" ;
 	ov:csvRow "69"^^xsd:integer .
 
-fsr-menus:thing_70 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_70 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "28" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "22.3" ;
@@ -3460,8 +3460,8 @@ fsr-menus:thing_70 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "70"^^xsd:integer .
 
-fsr-menus:thing_71 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_71 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "57.8" ;
 	raw:calcium_dv ".09" ;
 	raw:sodium_mg "397" ;
@@ -3505,8 +3505,8 @@ fsr-menus:thing_71 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "71"^^xsd:integer .
 
-fsr-menus:thing_72 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_72 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "16.12" ;
 	raw:calcium_dv ".08" ;
 	raw:sodium_mg "37.08" ;
@@ -3550,8 +3550,8 @@ fsr-menus:thing_72 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "72"^^xsd:integer .
 
-fsr-menus:thing_73 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_73 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "35.14" ;
 	raw:calcium_dv ".1" ;
 	raw:sodium_mg "426.36" ;
@@ -3595,8 +3595,8 @@ fsr-menus:thing_73 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "73"^^xsd:integer .
 
-fsr-menus:thing_74 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_74 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "24.94" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "26.2" ;
@@ -3640,8 +3640,8 @@ fsr-menus:thing_74 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "74"^^xsd:integer .
 
-fsr-menus:thing_75 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_75 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "11.47" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "413.23" ;
@@ -3685,8 +3685,8 @@ fsr-menus:thing_75 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "75"^^xsd:integer .
 
-fsr-menus:thing_76 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_76 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "32.43" ;
 	raw:calcium_dv ".17" ;
 	raw:sodium_mg "369.36" ;
@@ -3730,8 +3730,8 @@ fsr-menus:thing_76 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "76"^^xsd:integer .
 
-fsr-menus:thing_77 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_77 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "3.4" ;
 	raw:calcium_dv ".16" ;
 	raw:sodium_mg "603.5" ;
@@ -3775,8 +3775,8 @@ fsr-menus:thing_77 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Spread" ;
 	ov:csvRow "77"^^xsd:integer .
 
-fsr-menus:thing_78 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_78 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -3820,8 +3820,8 @@ fsr-menus:thing_78 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Candy" ;
 	ov:csvRow "78"^^xsd:integer .
 
-fsr-menus:thing_79 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_79 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -3865,8 +3865,8 @@ fsr-menus:thing_79 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Candy" ;
 	ov:csvRow "79"^^xsd:integer .
 
-fsr-menus:thing_80 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_80 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g ".04" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "22.6" ;
@@ -3910,8 +3910,8 @@ fsr-menus:thing_80 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Condiment" ;
 	ov:csvRow "80"^^xsd:integer .
 
-fsr-menus:thing_81 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_81 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -3955,8 +3955,8 @@ fsr-menus:thing_81 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Beverage" ;
 	ov:csvRow "81"^^xsd:integer .
 
-fsr-menus:thing_82 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_82 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -4000,8 +4000,8 @@ fsr-menus:thing_82 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Beverage" ;
 	ov:csvRow "82"^^xsd:integer .
 
-fsr-menus:thing_83 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_83 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "35.58" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "15.23" ;
@@ -4045,8 +4045,8 @@ fsr-menus:thing_83 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Fruit" ;
 	ov:csvRow "83"^^xsd:integer .
 
-fsr-menus:thing_84 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_84 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "34.31" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "9.85" ;
@@ -4090,8 +4090,8 @@ fsr-menus:thing_84 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Fruit" ;
 	ov:csvRow "84"^^xsd:integer .
 
-fsr-menus:thing_85 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_85 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -4135,8 +4135,8 @@ fsr-menus:thing_85 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "85"^^xsd:integer .
 
-fsr-menus:thing_86 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_86 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.09" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "2.35" ;
@@ -4180,8 +4180,8 @@ fsr-menus:thing_86 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "86"^^xsd:integer .
 
-fsr-menus:thing_87 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_87 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2.08" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "8.5" ;
@@ -4225,8 +4225,8 @@ fsr-menus:thing_87 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "87"^^xsd:integer .
 
-fsr-menus:thing_88 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_88 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "0" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -4270,8 +4270,8 @@ fsr-menus:thing_88 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "88"^^xsd:integer .
 
-fsr-menus:thing_89 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_89 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "0" ;
@@ -4315,8 +4315,8 @@ fsr-menus:thing_89 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "89"^^xsd:integer .
 
-fsr-menus:thing_90 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_90 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.82" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "390.67" ;
@@ -4360,8 +4360,8 @@ fsr-menus:thing_90 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "90"^^xsd:integer .
 
-fsr-menus:thing_91 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_91 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "446.17" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "4717.59" ;
@@ -4405,8 +4405,8 @@ fsr-menus:thing_91 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Total" ;
 	ov:csvRow "91"^^xsd:integer .
 
-fsr-menus:thing_92 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_92 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "44.42" ;
 	raw:calcium_dv ".07" ;
 	raw:sodium_mg "650.75" ;
@@ -4450,8 +4450,8 @@ fsr-menus:thing_92 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Entree" ;
 	ov:csvRow "92"^^xsd:integer .
 
-fsr-menus:thing_93 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_93 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4.83" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "710.77" ;
@@ -4495,8 +4495,8 @@ fsr-menus:thing_93 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Entree" ;
 	ov:csvRow "93"^^xsd:integer .
 
-fsr-menus:thing_94 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_94 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "52.27" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "305.91" ;
@@ -4540,8 +4540,8 @@ fsr-menus:thing_94 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "94"^^xsd:integer .
 
-fsr-menus:thing_95 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_95 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "6.08" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "666.5" ;
@@ -4585,8 +4585,8 @@ fsr-menus:thing_95 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "95"^^xsd:integer .
 
-fsr-menus:thing_96 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_96 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "26.99" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "47.43" ;
@@ -4630,8 +4630,8 @@ fsr-menus:thing_96 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "96"^^xsd:integer .
 
-fsr-menus:thing_97 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_97 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "23.46" ;
 	raw:calcium_dv ".09" ;
 	raw:sodium_mg "15.84" ;
@@ -4675,8 +4675,8 @@ fsr-menus:thing_97 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "97"^^xsd:integer .
 
-fsr-menus:thing_98 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_98 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "35.31" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "164.09" ;
@@ -4720,8 +4720,8 @@ fsr-menus:thing_98 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "98"^^xsd:integer .
 
-fsr-menus:thing_99 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_99 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.12" ;
 	raw:calcium_dv ".03" ;
 	raw:sodium_mg "205.2" ;
@@ -4765,8 +4765,8 @@ fsr-menus:thing_99 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackat
 	raw:itemtype "Snack" ;
 	ov:csvRow "99"^^xsd:integer .
 
-fsr-menus:thing_100 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_100 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "28" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "22.3" ;
@@ -4810,8 +4810,8 @@ fsr-menus:thing_100 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "100"^^xsd:integer .
 
-fsr-menus:thing_101 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_101 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "27.54" ;
 	raw:calcium_dv ".22" ;
 	raw:sodium_mg "169.99" ;
@@ -4855,8 +4855,8 @@ fsr-menus:thing_101 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "101"^^xsd:integer .
 
-fsr-menus:thing_102 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_102 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10.8" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "207.83" ;
@@ -4900,8 +4900,8 @@ fsr-menus:thing_102 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Spread" ;
 	ov:csvRow "102"^^xsd:integer .
 
-fsr-menus:thing_103 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_103 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "12" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "150" ;
@@ -4945,8 +4945,8 @@ fsr-menus:thing_103 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Candy" ;
 	ov:csvRow "103"^^xsd:integer .
 
-fsr-menus:thing_104 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_104 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "50.52" ;
 	raw:calcium_dv ".27" ;
 	raw:sodium_mg "230.3" ;
@@ -4990,8 +4990,8 @@ fsr-menus:thing_104 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "104"^^xsd:integer .
 
-fsr-menus:thing_105 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_105 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -5035,8 +5035,8 @@ fsr-menus:thing_105 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "105"^^xsd:integer .
 
-fsr-menus:thing_106 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_106 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "31.46" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "12.5" ;
@@ -5080,8 +5080,8 @@ fsr-menus:thing_106 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Fruit" ;
 	ov:csvRow "106"^^xsd:integer .
 
-fsr-menus:thing_107 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_107 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -5125,8 +5125,8 @@ fsr-menus:thing_107 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet C" ;
 	ov:csvRow "107"^^xsd:integer .
 
-fsr-menus:thing_108 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_108 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "0" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -5170,8 +5170,8 @@ fsr-menus:thing_108 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet C" ;
 	ov:csvRow "108"^^xsd:integer .
 
-fsr-menus:thing_109 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_109 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -5215,8 +5215,8 @@ fsr-menus:thing_109 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet C" ;
 	ov:csvRow "109"^^xsd:integer .
 
-fsr-menus:thing_110 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_110 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "439.34" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "5197.62" ;
@@ -5260,8 +5260,8 @@ fsr-menus:thing_110 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Total" ;
 	ov:csvRow "110"^^xsd:integer .
 
-fsr-menus:thing_111 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_111 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "58.16" ;
 	raw:calcium_dv ".1" ;
 	raw:sodium_mg "1205" ;
@@ -5305,8 +5305,8 @@ fsr-menus:thing_111 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Entree" ;
 	ov:csvRow "111"^^xsd:integer .
 
-fsr-menus:thing_112 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_112 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.53" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "360.47" ;
@@ -5350,8 +5350,8 @@ fsr-menus:thing_112 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Entree" ;
 	ov:csvRow "112"^^xsd:integer .
 
-fsr-menus:thing_113 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_113 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "52.17" ;
 	raw:calcium_dv ".07" ;
 	raw:sodium_mg "301.74" ;
@@ -5395,8 +5395,8 @@ fsr-menus:thing_113 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "113"^^xsd:integer .
 
-fsr-menus:thing_114 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_114 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "11.47" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "413.23" ;
@@ -5440,8 +5440,8 @@ fsr-menus:thing_114 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "114"^^xsd:integer .
 
-fsr-menus:thing_115 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_115 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "21.6" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "23.52" ;
@@ -5485,8 +5485,8 @@ fsr-menus:thing_115 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "115"^^xsd:integer .
 
-fsr-menus:thing_116 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_116 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "44.59" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "162.5" ;
@@ -5530,8 +5530,8 @@ fsr-menus:thing_116 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "116"^^xsd:integer .
 
-fsr-menus:thing_117 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_117 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "25.55" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "37.8" ;
@@ -5575,8 +5575,8 @@ fsr-menus:thing_117 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "117"^^xsd:integer .
 
-fsr-menus:thing_118 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_118 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "35.14" ;
 	raw:calcium_dv ".1" ;
 	raw:sodium_mg "426.36" ;
@@ -5620,8 +5620,8 @@ fsr-menus:thing_118 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "118"^^xsd:integer .
 
-fsr-menus:thing_119 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_119 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "30.96" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "286.9" ;
@@ -5665,8 +5665,8 @@ fsr-menus:thing_119 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "119"^^xsd:integer .
 
-fsr-menus:thing_120 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_120 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "3.7" ;
 	raw:calcium_dv ".16" ;
 	raw:sodium_mg "612" ;
@@ -5710,8 +5710,8 @@ fsr-menus:thing_120 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Spread" ;
 	ov:csvRow "120"^^xsd:integer .
 
-fsr-menus:thing_121 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_121 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -5755,8 +5755,8 @@ fsr-menus:thing_121 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Candy" ;
 	ov:csvRow "121"^^xsd:integer .
 
-fsr-menus:thing_122 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_122 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -5800,8 +5800,8 @@ fsr-menus:thing_122 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Candy" ;
 	ov:csvRow "122"^^xsd:integer .
 
-fsr-menus:thing_123 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_123 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g ".04" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "22.6" ;
@@ -5845,8 +5845,8 @@ fsr-menus:thing_123 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Condiment" ;
 	ov:csvRow "123"^^xsd:integer .
 
-fsr-menus:thing_124 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_124 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.56" ;
 	raw:calcium_dv ".38" ;
 	raw:sodium_mg "170.8" ;
@@ -5890,8 +5890,8 @@ fsr-menus:thing_124 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "124"^^xsd:integer .
 
-fsr-menus:thing_125 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_125 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -5935,8 +5935,8 @@ fsr-menus:thing_125 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "125"^^xsd:integer .
 
-fsr-menus:thing_126 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_126 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "46.98" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "21" ;
@@ -5980,8 +5980,8 @@ fsr-menus:thing_126 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Fruit" ;
 	ov:csvRow "126"^^xsd:integer .
 
-fsr-menus:thing_127 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_127 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -6025,8 +6025,8 @@ fsr-menus:thing_127 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet C" ;
 	ov:csvRow "127"^^xsd:integer .
 
-fsr-menus:thing_128 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_128 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "0" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -6070,8 +6070,8 @@ fsr-menus:thing_128 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet C" ;
 	ov:csvRow "128"^^xsd:integer .
 
-fsr-menus:thing_129 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_129 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -6115,8 +6115,8 @@ fsr-menus:thing_129 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet C" ;
 	ov:csvRow "129"^^xsd:integer .
 
-fsr-menus:thing_130 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_130 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "437.99" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "5682.13" ;
@@ -6160,8 +6160,8 @@ fsr-menus:thing_130 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Total" ;
 	ov:csvRow "130"^^xsd:integer .
 
-fsr-menus:thing_131 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_131 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "26.35" ;
 	raw:calcium_dv ".04" ;
 	raw:sodium_mg "594.01" ;
@@ -6205,8 +6205,8 @@ fsr-menus:thing_131 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Entree" ;
 	ov:csvRow "131"^^xsd:integer .
 
-fsr-menus:thing_132 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_132 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "5.86" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "455.68" ;
@@ -6250,8 +6250,8 @@ fsr-menus:thing_132 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Entree" ;
 	ov:csvRow "132"^^xsd:integer .
 
-fsr-menus:thing_133 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_133 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "27.73" ;
 	raw:calcium_dv ".03" ;
 	raw:sodium_mg "409.84" ;
@@ -6295,8 +6295,8 @@ fsr-menus:thing_133 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "133"^^xsd:integer .
 
-fsr-menus:thing_134 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_134 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "6.08" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "666.5" ;
@@ -6340,8 +6340,8 @@ fsr-menus:thing_134 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "134"^^xsd:integer .
 
-fsr-menus:thing_135 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_135 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "24.26" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "18.1" ;
@@ -6385,8 +6385,8 @@ fsr-menus:thing_135 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "135"^^xsd:integer .
 
-fsr-menus:thing_136 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_136 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "18.42" ;
 	raw:calcium_dv ".04" ;
 	raw:sodium_mg "5.6" ;
@@ -6430,8 +6430,8 @@ fsr-menus:thing_136 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "136"^^xsd:integer .
 
-fsr-menus:thing_137 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_137 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "25.55" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "37.8" ;
@@ -6475,8 +6475,8 @@ fsr-menus:thing_137 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "137"^^xsd:integer .
 
-fsr-menus:thing_138 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_138 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "48.48" ;
 	raw:calcium_dv ".05" ;
 	raw:sodium_mg "319.44" ;
@@ -6520,8 +6520,8 @@ fsr-menus:thing_138 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "138"^^xsd:integer .
 
-fsr-menus:thing_139 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_139 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "27.54" ;
 	raw:calcium_dv ".22" ;
 	raw:sodium_mg "169.99" ;
@@ -6565,8 +6565,8 @@ fsr-menus:thing_139 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "139"^^xsd:integer .
 
-fsr-menus:thing_140 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_140 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "32.43" ;
 	raw:calcium_dv ".17" ;
 	raw:sodium_mg "369.36" ;
@@ -6610,8 +6610,8 @@ fsr-menus:thing_140 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "140"^^xsd:integer .
 
-fsr-menus:thing_141 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_141 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10.43" ;
 	raw:calcium_dv ".15" ;
 	raw:sodium_mg "363.2" ;
@@ -6655,8 +6655,8 @@ fsr-menus:thing_141 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Spread" ;
 	ov:csvRow "141"^^xsd:integer .
 
-fsr-menus:thing_142 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_142 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -6700,8 +6700,8 @@ fsr-menus:thing_142 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Candy" ;
 	ov:csvRow "142"^^xsd:integer .
 
-fsr-menus:thing_143 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_143 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -6745,8 +6745,8 @@ fsr-menus:thing_143 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Candy" ;
 	ov:csvRow "143"^^xsd:integer .
 
-fsr-menus:thing_144 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_144 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4.99" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "257.13" ;
@@ -6790,8 +6790,8 @@ fsr-menus:thing_144 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Condiment" ;
 	ov:csvRow "144"^^xsd:integer .
 
-fsr-menus:thing_145 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_145 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -6835,8 +6835,8 @@ fsr-menus:thing_145 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "145"^^xsd:integer .
 
-fsr-menus:thing_146 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_146 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -6880,8 +6880,8 @@ fsr-menus:thing_146 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "146"^^xsd:integer .
 
-fsr-menus:thing_147 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_147 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "35.58" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "15.23" ;
@@ -6925,8 +6925,8 @@ fsr-menus:thing_147 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Fruit" ;
 	ov:csvRow "147"^^xsd:integer .
 
-fsr-menus:thing_148 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_148 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -6970,8 +6970,8 @@ fsr-menus:thing_148 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "148"^^xsd:integer .
 
-fsr-menus:thing_149 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_149 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.09" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "2.35" ;
@@ -7015,8 +7015,8 @@ fsr-menus:thing_149 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "149"^^xsd:integer .
 
-fsr-menus:thing_150 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_150 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2.08" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "8.5" ;
@@ -7060,8 +7060,8 @@ fsr-menus:thing_150 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "150"^^xsd:integer .
 
-fsr-menus:thing_151 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_151 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "0" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -7105,8 +7105,8 @@ fsr-menus:thing_151 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "151"^^xsd:integer .
 
-fsr-menus:thing_152 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_152 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "0" ;
@@ -7150,8 +7150,8 @@ fsr-menus:thing_152 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "152"^^xsd:integer .
 
-fsr-menus:thing_153 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_153 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.82" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "390.67" ;
@@ -7195,8 +7195,8 @@ fsr-menus:thing_153 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "153"^^xsd:integer .
 
-fsr-menus:thing_154 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_154 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "400.6" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "4248.33" ;
@@ -7240,8 +7240,8 @@ fsr-menus:thing_154 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Total" ;
 	ov:csvRow "154"^^xsd:integer .
 
-fsr-menus:thing_155 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_155 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "44.42" ;
 	raw:calcium_dv ".07" ;
 	raw:sodium_mg "650.75" ;
@@ -7285,8 +7285,8 @@ fsr-menus:thing_155 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Entree" ;
 	ov:csvRow "155"^^xsd:integer .
 
-fsr-menus:thing_156 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_156 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.11" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "493.85" ;
@@ -7330,8 +7330,8 @@ fsr-menus:thing_156 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Entree" ;
 	ov:csvRow "156"^^xsd:integer .
 
-fsr-menus:thing_157 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_157 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "52.27" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "305.91" ;
@@ -7375,8 +7375,8 @@ fsr-menus:thing_157 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "157"^^xsd:integer .
 
-fsr-menus:thing_158 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_158 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4.91" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "564.2" ;
@@ -7420,8 +7420,8 @@ fsr-menus:thing_158 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "158"^^xsd:integer .
 
-fsr-menus:thing_159 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_159 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "17.52" ;
 	raw:calcium_dv ".08" ;
 	raw:sodium_mg "48.8" ;
@@ -7465,8 +7465,8 @@ fsr-menus:thing_159 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "159"^^xsd:integer .
 
-fsr-menus:thing_160 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_160 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "24.94" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "26.2" ;
@@ -7510,8 +7510,8 @@ fsr-menus:thing_160 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "160"^^xsd:integer .
 
-fsr-menus:thing_161 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_161 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "23.46" ;
 	raw:calcium_dv ".09" ;
 	raw:sodium_mg "15.84" ;
@@ -7555,8 +7555,8 @@ fsr-menus:thing_161 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "161"^^xsd:integer .
 
-fsr-menus:thing_162 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_162 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "5.51" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "608.4" ;
@@ -7600,8 +7600,8 @@ fsr-menus:thing_162 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "162"^^xsd:integer .
 
-fsr-menus:thing_163 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_163 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "30" ;
 	raw:calcium_dv ".05" ;
 	raw:sodium_mg "470" ;
@@ -7645,8 +7645,8 @@ fsr-menus:thing_163 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "163"^^xsd:integer .
 
-fsr-menus:thing_164 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_164 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "30.96" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "286.9" ;
@@ -7690,8 +7690,8 @@ fsr-menus:thing_164 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "164"^^xsd:integer .
 
-fsr-menus:thing_165 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_165 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -7735,8 +7735,8 @@ fsr-menus:thing_165 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Candy" ;
 	ov:csvRow "165"^^xsd:integer .
 
-fsr-menus:thing_166 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_166 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -7780,8 +7780,8 @@ fsr-menus:thing_166 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Candy" ;
 	ov:csvRow "166"^^xsd:integer .
 
-fsr-menus:thing_167 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_167 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4.99" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "257.13" ;
@@ -7825,8 +7825,8 @@ fsr-menus:thing_167 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Condiment" ;
 	ov:csvRow "167"^^xsd:integer .
 
-fsr-menus:thing_168 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_168 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -7870,8 +7870,8 @@ fsr-menus:thing_168 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "168"^^xsd:integer .
 
-fsr-menus:thing_169 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_169 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "41.23" ;
 	raw:calcium_dv ".37" ;
 	raw:sodium_mg "166.6" ;
@@ -7915,8 +7915,8 @@ fsr-menus:thing_169 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "169"^^xsd:integer .
 
-fsr-menus:thing_170 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_170 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "31.46" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "12.5" ;
@@ -7960,8 +7960,8 @@ fsr-menus:thing_170 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Fruit" ;
 	ov:csvRow "170"^^xsd:integer .
 
-fsr-menus:thing_171 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_171 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -8005,8 +8005,8 @@ fsr-menus:thing_171 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "171"^^xsd:integer .
 
-fsr-menus:thing_172 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_172 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.09" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "2.35" ;
@@ -8050,8 +8050,8 @@ fsr-menus:thing_172 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "172"^^xsd:integer .
 
-fsr-menus:thing_173 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_173 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2.08" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "8.5" ;
@@ -8095,8 +8095,8 @@ fsr-menus:thing_173 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "173"^^xsd:integer .
 
-fsr-menus:thing_174 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_174 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "0" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -8140,8 +8140,8 @@ fsr-menus:thing_174 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "174"^^xsd:integer .
 
-fsr-menus:thing_175 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_175 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "4" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "0" ;
@@ -8185,8 +8185,8 @@ fsr-menus:thing_175 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "175"^^xsd:integer .
 
-fsr-menus:thing_176 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_176 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.82" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "390.67" ;
@@ -8230,8 +8230,8 @@ fsr-menus:thing_176 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet A" ;
 	ov:csvRow "176"^^xsd:integer .
 
-fsr-menus:thing_177 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_177 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "377.14" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "4385.64" ;
@@ -8275,8 +8275,8 @@ fsr-menus:thing_177 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Total" ;
 	ov:csvRow "177"^^xsd:integer .
 
-fsr-menus:thing_178 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_178 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "38.9" ;
 	raw:calcium_dv ".09" ;
 	raw:sodium_mg "727" ;
@@ -8320,8 +8320,8 @@ fsr-menus:thing_178 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Entree" ;
 	ov:csvRow "178"^^xsd:integer .
 
-fsr-menus:thing_179 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_179 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.53" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "360.47" ;
@@ -8365,8 +8365,8 @@ fsr-menus:thing_179 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Entree" ;
 	ov:csvRow "179"^^xsd:integer .
 
-fsr-menus:thing_180 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_180 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.12" ;
 	raw:calcium_dv ".03" ;
 	raw:sodium_mg "205.2" ;
@@ -8410,8 +8410,8 @@ fsr-menus:thing_180 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "180"^^xsd:integer .
 
-fsr-menus:thing_181 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_181 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "11.47" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "413.23" ;
@@ -8455,8 +8455,8 @@ fsr-menus:thing_181 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "181"^^xsd:integer .
 
-fsr-menus:thing_182 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_182 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "57.8" ;
 	raw:calcium_dv ".09" ;
 	raw:sodium_mg "397" ;
@@ -8500,8 +8500,8 @@ fsr-menus:thing_182 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "182"^^xsd:integer .
 
-fsr-menus:thing_183 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_183 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "26.99" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "47.43" ;
@@ -8545,8 +8545,8 @@ fsr-menus:thing_183 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "183"^^xsd:integer .
 
-fsr-menus:thing_184 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_184 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "44.59" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "162.5" ;
@@ -8590,8 +8590,8 @@ fsr-menus:thing_184 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Snack" ;
 	ov:csvRow "184"^^xsd:integer .
 
-fsr-menus:thing_185 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_185 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "33.05" ;
 	raw:calcium_dv ".06" ;
 	raw:sodium_mg "431.52" ;
@@ -8635,8 +8635,8 @@ fsr-menus:thing_185 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "185"^^xsd:integer .
 
-fsr-menus:thing_186 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_186 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "27.54" ;
 	raw:calcium_dv ".22" ;
 	raw:sodium_mg "169.99" ;
@@ -8680,8 +8680,8 @@ fsr-menus:thing_186 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Bread/Crax" ;
 	ov:csvRow "186"^^xsd:integer .
 
-fsr-menus:thing_187 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_187 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "10.43" ;
 	raw:calcium_dv ".15" ;
 	raw:sodium_mg "363.2" ;
@@ -8725,8 +8725,8 @@ fsr-menus:thing_187 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Spread" ;
 	ov:csvRow "187"^^xsd:integer .
 
-fsr-menus:thing_188 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_188 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "12" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "150" ;
@@ -8770,8 +8770,8 @@ fsr-menus:thing_188 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Candy" ;
 	ov:csvRow "188"^^xsd:integer .
 
-fsr-menus:thing_189 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_189 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "41.23" ;
 	raw:calcium_dv ".37" ;
 	raw:sodium_mg "166.6" ;
@@ -8815,8 +8815,8 @@ fsr-menus:thing_189 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "189"^^xsd:integer .
 
-fsr-menus:thing_190 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_190 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "42.54" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "87.89" ;
@@ -8860,8 +8860,8 @@ fsr-menus:thing_190 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Beverage" ;
 	ov:csvRow "190"^^xsd:integer .
 
-fsr-menus:thing_191 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_191 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "34.31" ;
 	raw:calcium_dv ".02" ;
 	raw:sodium_mg "9.85" ;
@@ -8905,8 +8905,8 @@ fsr-menus:thing_191 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "Fruit" ;
 	ov:csvRow "191"^^xsd:integer .
 
-fsr-menus:thing_192 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_192 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2.75" ;
 	raw:calcium_dv ".01" ;
 	raw:sodium_mg "23.55" ;
@@ -8950,8 +8950,8 @@ fsr-menus:thing_192 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet B" ;
 	ov:csvRow "192"^^xsd:integer .
 
-fsr-menus:thing_193 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_193 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "2" ;
 	raw:calcium_dv "" ;
 	raw:sodium_mg "" ;
@@ -8995,8 +8995,8 @@ fsr-menus:thing_193 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet B" ;
 	ov:csvRow "193"^^xsd:integer .
 
-fsr-menus:thing_194 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_194 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "0" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "1550.32" ;
@@ -9040,8 +9040,8 @@ fsr-menus:thing_194 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet B" ;
 	ov:csvRow "194"^^xsd:integer .
 
-fsr-menus:thing_195 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_195 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "1.58" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "786.94" ;
@@ -9085,8 +9085,8 @@ fsr-menus:thing_195 dcterms:isReferencedBy <https://github.com/ewpatton/dodhacka
 	raw:itemtype "FSR 2012 Accessory Packet B" ;
 	ov:csvRow "195"^^xsd:integer .
 
-fsr-menus:thing_196 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
-	void:inDataset <https://github.com/ewpatton/dodhackathon/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+fsr-menus:thing_196 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012> ;
 	raw:carbohydrates_g "426.08" ;
 	raw:calcium_dv "0" ;
 	raw:sodium_mg "4478.82" ;

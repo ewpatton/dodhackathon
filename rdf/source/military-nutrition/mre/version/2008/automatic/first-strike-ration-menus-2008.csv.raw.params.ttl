@@ -8,16 +8,16 @@
 @prefix foaf:          <http://xmlns.com/foaf/0.1/> .
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
-@prefix :              <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/params/raw/> .
+@prefix :              <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2008/params/raw/> .
 
 
-<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw>
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2008/conversion/raw>
    a conversion:LayerDataset, void:Dataset;
 
    conversion:base_uri           "https://github.com/ewpatton/dodhackathon/tree/master/rdf"^^xsd:anyURI;
    conversion:source_identifier  "military-nutrition";
-   conversion:dataset_identifier "fsr-menus";
-   conversion:version_identifier "2012";
+   conversion:dataset_identifier "mre";
+   conversion:version_identifier "2008";
    conversion:conversion_identifier "raw";
 
    conversion:conversion_process [
@@ -25,7 +25,7 @@
       conversion:conversion_identifier "raw";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
-      dcterms:created "2013-06-28T22:51:48-04:00"^^xsd:dateTime;
+      dcterms:created "2013-06-28T23:25:14-04:00"^^xsd:dateTime;
 
 
       #conversion:enhance [

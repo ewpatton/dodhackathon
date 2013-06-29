@@ -8,15 +8,15 @@
 @prefix foaf:          <http://xmlns.com/foaf/0.1/> .
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
-@prefix :              <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/params/raw/> .
+@prefix :              <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2012/params/raw/> .
 
 
-<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/fsr-menus/version/2012/conversion/raw>
+<https://raw.github.com/ewpatton/dodhackathon/master/rdf/source/military-nutrition/dataset/mre/version/2012/conversion/raw>
    a conversion:LayerDataset, void:Dataset;
 
-   conversion:base_uri           "https://github.com/ewpatton/dodhackathon/tree/master/rdf"^^xsd:anyURI;
+   conversion:base_uri           "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#"^^xsd:anyURI;
    conversion:source_identifier  "military-nutrition";
-   conversion:dataset_identifier "fsr-menus";
+   conversion:dataset_identifier "mre";
    conversion:version_identifier "2012";
    conversion:conversion_identifier "raw";
 
@@ -25,7 +25,7 @@
       conversion:conversion_identifier "raw";
 
       dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
-      dcterms:created "2013-06-28T22:51:48-04:00"^^xsd:dateTime;
+      dcterms:created "2013-06-28T22:59:24-04:00"^^xsd:dateTime;
 
 
       #conversion:enhance [
@@ -88,210 +88,222 @@
       ];
       conversion:enhance [
          ov:csvCol          7;
-         ov:csvHeader       "IRON_MG";
+         ov:csvHeader       "VITAMINK_MCG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          8;
-         ov:csvHeader       "TOTALFAT_G";
+         ov:csvHeader       "IRON_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          9;
-         ov:csvHeader       "VITAMINE_MG";
+         ov:csvHeader       "TOTALFAT_G";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          10;
-         ov:csvHeader       "VITAMINB6_MG";
+         ov:csvHeader       "VITAMINE_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          11;
-         ov:csvHeader       "CARBOHYDRATES_DV";
+         ov:csvHeader       "VITAMINB6_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          12;
-         ov:csvHeader       "CALORIES";
+         ov:csvHeader       "CARBOHYDRATES_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          13;
-         ov:csvHeader       "SATURATEDFAT_G";
+         ov:csvHeader       "CALORIES";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          14;
-         ov:csvHeader       "WEIGHT";
+         ov:csvHeader       "SATURATEDFAT_G";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          15;
-         ov:csvHeader       "SATURATEDFAT_DV";
+         ov:csvHeader       "WEIGHT";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          16;
-         ov:csvHeader       "DIETARYFIBER_DV";
+         ov:csvHeader       "SATURATEDFAT_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          17;
-         ov:csvHeader       "SELENIUM_MCG";
+         ov:csvHeader       "DIETARYFIBER_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          18;
-         ov:csvHeader       "VITAMINB12_MCG";
+         ov:csvHeader       "SELENIUM_MCG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          19;
-         ov:csvHeader       "CHOLESTEROL_MG";
+         ov:csvHeader       "IODINE_MCG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          20;
-         ov:csvHeader       "THIAMIN_MG";
+         ov:csvHeader       "VITAMINB12_MCG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          21;
-         ov:csvHeader       "FOLICACID_MCG";
+         ov:csvHeader       "CHOLESTEROL_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          22;
-         ov:csvHeader       "VITAMINC_DV";
+         ov:csvHeader       "THIAMIN_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          23;
-         ov:csvHeader       "DIETARYFIBER_G";
+         ov:csvHeader       "FOLICACID_MCG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          24;
-         ov:csvHeader       "RATION";
+         ov:csvHeader       "VITAMINC_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          25;
-         ov:csvHeader       "PHOSPHOROUS_MG";
+         ov:csvHeader       "DIETARYFIBER_G";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          26;
-         ov:csvHeader       "MAGNESIUM_MG";
+         ov:csvHeader       "RATION";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          27;
-         ov:csvHeader       "SODIUM_DV";
+         ov:csvHeader       "PHOSPHOROUS_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          28;
-         ov:csvHeader       "POTASSIUM_MG";
+         ov:csvHeader       "MAGNESIUM_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          29;
-         ov:csvHeader       "VITAMINA_DV";
+         ov:csvHeader       "SODIUM_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          30;
-         ov:csvHeader       "IRON_DV";
+         ov:csvHeader       "POTASSIUM_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          31;
-         ov:csvHeader       "NIACIN_MG";
+         ov:csvHeader       "VITAMINA_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          32;
-         ov:csvHeader       "TOTALFAT_DV";
+         ov:csvHeader       "IRON_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          33;
-         ov:csvHeader       "MENU";
+         ov:csvHeader       "NIACIN_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          34;
-         ov:csvHeader       "RIBOFLAVIN_MG";
+         ov:csvHeader       "TOTALFAT_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          35;
-         ov:csvHeader       "PROTEIN_G";
+         ov:csvHeader       "MENU";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          36;
-         ov:csvHeader       "TRANSFAT_G";
+         ov:csvHeader       "RIBOFLAVIN_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          37;
-         ov:csvHeader       "CHOLESTEROL_DV";
+         ov:csvHeader       "PROTEIN_G";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          38;
-         ov:csvHeader       "VITAMINC_MG";
+         ov:csvHeader       "TRANSFAT_G";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          39;
-         ov:csvHeader       "VITAMINA_IU";
+         ov:csvHeader       "CHOLESTEROL_DV";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          40;
-         ov:csvHeader       "ZINC_MG";
+         ov:csvHeader       "VITAMINC_MG";
          conversion:comment "";
          conversion:range   rdfs:Literal;
       ];
       conversion:enhance [
          ov:csvCol          41;
+         ov:csvHeader       "VITAMINA_IU";
+         conversion:comment "";
+         conversion:range   rdfs:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          42;
+         ov:csvHeader       "ZINC_MG";
+         conversion:comment "";
+         conversion:range   rdfs:Literal;
+      ];
+      conversion:enhance [
+         ov:csvCol          43;
          ov:csvHeader       "ITEMTYPE";
          conversion:comment "";
          conversion:range   rdfs:Literal;

@@ -1,0 +1,584 @@
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix todo:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix vann:          <http://purl.org/vocab/vann/> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix time:          <http://www.w3.org/2006/time#> .
+@prefix wgs:           <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geonames:      <http://www.geonames.org/ontology#> .
+@prefix geonamesid:    <http://sws.geonames.org/> .
+@prefix govtrackusgov: <http://www.rdfabout.com/rdf/usgov/geo/us/> .
+@prefix dbpedia:       <http://dbpedia.org/resource/> .
+@prefix dbpediaprop:   <http://dbpedia.org/property/> .
+@prefix dbpediaowl:    <http://dbpedia.org/ontology/> .
+@prefix con:           <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix muo:           <http://purl.oclc.org/NET/muo/muo#> .
+@prefix vs:            <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix frbr:          <http://purl.org/vocab/frbr/core#> .
+@prefix bibo:          <http://purl.org/ontology/bibo/> .
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix doap:          <http://usefulinc.com/ns/doap#> .
+@prefix nfo:           <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix sio:           <http://semanticscience.org/resource/> .
+@prefix org:           <http://www.w3.org/ns/org#> .
+@prefix vsr:           <http://purl.org/twc/vocab/vsr#> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix qb:            <http://purl.org/linked-data/cube#> .
+@prefix pml:           <http://provenanceweb.org/ns/pml#> .
+@prefix dgtwc:         <http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix scovo:         <http://purl.org/NET/scovo#> .
+@prefix sioc:          <http://rdfs.org/sioc/ns#> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix ov:            <http://open.vocab.org/terms/> .
+@prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
+@prefix :              <https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/military-nutrition/dataset/mre/version/2008/params/enhancement/1/> .
+
+
+#:a_bundle
+#   a conversion:ImplicitBundle;
+#   conversion:property_name "a_property"; # Can also be a URI, e.g. dcterms:title.
+#   conversion:name_template "[/sd]company/[#2]/[r]";
+#   #conversion:type_name     "My Class";   # Can also be a URI, e.g. foaf:Person.
+#.
+
+<https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#/source/military-nutrition/dataset/mre/version/2008/conversion/enhancement/1>
+   a conversion:LayerDataset, void:Dataset;
+
+   conversion:base_uri           "https://github.com/timrdf/csv2rdf4lod-automation/wiki/CSV2RDF4LOD_BASE_URI#"^^xsd:anyURI;
+   conversion:source_identifier  "military-nutrition";
+   conversion:dataset_identifier "mre";
+   conversion:version_identifier "2008";
+   conversion:enhancement_identifier "1";
+
+   conversion:conversion_process [
+      a conversion:EnhancementConversionProcess;
+      conversion:enhancement_identifier "1";
+
+      dcterms:creator [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+      dcterms:created "2013-06-28T23:25:14-04:00"^^xsd:dateTime;
+
+
+      #conversion:enhance [
+      #   ov:csvRow 2;
+      #   a conversion:DataStartRow;
+      #];
+
+      conversion:delimits_cell ",";
+      #conversion:delimits_cell "	"; # tab
+      #conversion:delimits_cell "|";   # pipe
+      #conversion:delimits_cell ",";   # comma
+
+      #conversion:interpret [
+      #   conversion:symbol        "";
+      #   conversion:interpretation conversion:null; 
+      #];
+      #conversion:enhance [
+      #   conversion:domain_template "thing_[r]";
+      #   conversion:domain_name     "Thing";
+      #];
+      #conversion:enhance [
+      #   conversion:class_name "Thing";
+      #   conversion:subclass_of <http://purl.org/...>;
+      #];
+      conversion:enhance [
+         ov:csvCol          1;
+         ov:csvHeader       "CARBOHYDRATES_G";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "CARBOHYDRATES_G";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          2;
+         ov:csvHeader       "CALCIUM_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "CALCIUM_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          3;
+         ov:csvHeader       "SODIUM_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SODIUM_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          4;
+         ov:csvHeader       "CALCIUM_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "CALCIUM_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          5;
+         ov:csvHeader       "ITEM";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "ITEM";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          6;
+         ov:csvHeader       "SUGARS_G";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SUGARS_G";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          7;
+         ov:csvHeader       "IRON_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "IRON_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          8;
+         ov:csvHeader       "TOTALFAT_G";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "TOTALFAT_G";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          9;
+         ov:csvHeader       "VITAMINE_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "VITAMINE_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          10;
+         ov:csvHeader       "VITAMINB6_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "VITAMINB6_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          11;
+         ov:csvHeader       "CARBOHYDRATES_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "CARBOHYDRATES_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          12;
+         ov:csvHeader       "CALORIES";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "CALORIES";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          13;
+         ov:csvHeader       "SATURATEDFAT_G";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SATURATEDFAT_G";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          14;
+         ov:csvHeader       "WEIGHT";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "WEIGHT";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          15;
+         ov:csvHeader       "SATURATEDFAT_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SATURATEDFAT_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          16;
+         ov:csvHeader       "DIETARYFIBER_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "DIETARYFIBER_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          17;
+         ov:csvHeader       "SELENIUM_MCG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SELENIUM_MCG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          18;
+         ov:csvHeader       "VITAMINB12_MCG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "VITAMINB12_MCG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          19;
+         ov:csvHeader       "CHOLESTEROL_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "CHOLESTEROL_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          20;
+         ov:csvHeader       "THIAMIN_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "THIAMIN_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          21;
+         ov:csvHeader       "FOLICACID_MCG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "FOLICACID_MCG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          22;
+         ov:csvHeader       "VITAMINC_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "VITAMINC_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          23;
+         ov:csvHeader       "DIETARYFIBER_G";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "DIETARYFIBER_G";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          24;
+         ov:csvHeader       "RATION";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "RATION";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          25;
+         ov:csvHeader       "PHOSPHOROUS_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "PHOSPHOROUS_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          26;
+         ov:csvHeader       "MAGNESIUM_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "MAGNESIUM_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          27;
+         ov:csvHeader       "SODIUM_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "SODIUM_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          28;
+         ov:csvHeader       "POTASSIUM_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "POTASSIUM_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          29;
+         ov:csvHeader       "VITAMINA_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "VITAMINA_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          30;
+         ov:csvHeader       "IRON_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "IRON_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          31;
+         ov:csvHeader       "NIACIN_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "NIACIN_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          32;
+         ov:csvHeader       "TOTALFAT_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "TOTALFAT_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          33;
+         ov:csvHeader       "MENU";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "MENU";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          34;
+         ov:csvHeader       "RIBOFLAVIN_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "RIBOFLAVIN_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          35;
+         ov:csvHeader       "PROTEIN_G";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "PROTEIN_G";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          36;
+         ov:csvHeader       "TRANSFAT_G";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "TRANSFAT_G";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          37;
+         ov:csvHeader       "CHOLESTEROL_DV";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "CHOLESTEROL_DV";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          38;
+         ov:csvHeader       "VITAMINC_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "VITAMINC_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          39;
+         ov:csvHeader       "VITAMINA_IU";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "VITAMINA_IU";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          40;
+         ov:csvHeader       "ZINC_MG";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "ZINC_MG";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          41;
+         ov:csvHeader       "ITEMTYPE";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         #conversion:label   "ITEMTYPE";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      #conversion:enhance [            
+      #   ov:csvRow 3,4,5;             
+      #   a conversion:ExampleResource;
+      #];                              
+   ];
+.
