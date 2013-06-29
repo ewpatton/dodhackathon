@@ -5,6 +5,10 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="hello_soldier">Hello Soldier!</string>
+    <string name="target_calories">Target Calories</string>
+    <string name="total_fat">Total Fat</string>
+    <string name="total_carbs">Total Carbohydrates</string>
+    <string name="total_protein">Total Protein</string>
 
     <color name="white">#FFFFFF</color>
     <color name="red">#E77471</color>

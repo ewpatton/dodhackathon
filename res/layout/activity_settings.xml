@@ -33,52 +33,55 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-        <TextView android:text="Target Calories"
-            android:layout_width="wrap_content"
+        <TextView android:text="@string/target_calories"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"/>
 	    <EditText
 	        android:id="@+id/totalCals"
-	        android:layout_width="match_parent"
+	        android:layout_width="100sp"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
-	        android:hint="Target Calories"
+	        android:hint="@string/target_calories"
 	        android:inputType="number" >
 	    </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-        <TextView android:text="Total Fat"
-            android:layout_width="wrap_content"
+        <TextView android:text="@string/total_fat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"/>
 	    <EditText
 	        android:id="@+id/totalFat"
-	        android:layout_width="match_parent"
+	        android:layout_width="100sp"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
-	        android:hint="Total Fat"
+	        android:hint="@string/total_fat"
 	        android:inputType="number" >
 	    </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-        <TextView android:text="Total Carbohydrates"
-            android:layout_width="wrap_content"
+        <TextView android:text="@string/total_carbs"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"/>
 	    <EditText
 	        android:id="@+id/totalCarbohydrates"
-	        android:layout_width="match_parent"
+	        android:layout_width="100sp"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
-	        android:hint="Total Carbohydrates"
+	        android:hint="@string/total_carbs"
 	        android:inputType="number" >
 	    </EditText>
 	</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-        <TextView android:text="Total Protein"
+        <TextView android:text="@string/total_protein"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
@@ -87,7 +90,7 @@
 	        android:layout_width="100sp"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
-	        android:hint="Total Protein"
+	        android:hint="@string/total_protein"
 	        android:inputType="number" >
 	    </EditText>
     </LinearLayout>
