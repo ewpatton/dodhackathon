@@ -15,5 +15,6 @@
 
     <string name="menu_settings">Settings</string>
     <string name="title_activity_ration_menu">RationMenuActivity</string>
+    <string name="title_activity_nutritional_reference">Nutritional Reference</string>
 
 </resources>

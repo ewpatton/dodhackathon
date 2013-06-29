@@ -27,6 +27,14 @@
             android:name="com.rationmatch.RationMenuActivity"
             android:label="@string/title_activity_ration_menu" >
         </activity>
+        <activity
+            android:name="com.rationmatch.NutritionalReference"
+            android:label="@string/title_activity_nutritional_reference"
+            android:parentActivityName="com.rationmatch.RationMatch" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rationmatch.RationMatch" />
+        </activity>
     </application>
 
 </manifest>
