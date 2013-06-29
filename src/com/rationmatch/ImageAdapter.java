@@ -1,11 +1,17 @@
 package com.rationmatch;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class ImageAdapter extends BaseAdapter {
 	private Context mContext;
@@ -42,11 +48,27 @@ public class ImageAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {			
+		LinearLayout rLayout = new LinearLayout(mContext);
+		
+		rLayout.setOrientation(LinearLayout.VERTICAL);
+		
 		ImageView imageView = new ImageView(mContext);
         imageView.setImageResource(mThumbIds[position]);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        imageView.setLayoutParams(new GridView.LayoutParams(70, 70));
-        return imageView;
+        imageView.setLayoutParams(new GridView.LayoutParams(120, 120));
+        
+        LinearLayout.LayoutParams tParams = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        
+        
+        TextView text =  new TextView(mContext);
+        text.setText("Menu ".concat(Integer.toString(position+1)));
+        text.setTypeface(Typeface.DEFAULT_BOLD);
+        text.setLayoutParams(tParams);
+        
+        rLayout.addView(imageView);
+        rLayout.addView(text);
+        
+        return rLayout;
 	}
 
 }
