@@ -5,8 +5,8 @@
     <dimen name="activity_vertical_margin">24dp</dimen>
     
     <!-- The following two dimensions should add up to activity_vertical_margin -->
-    <dimen name="layout_bottom_margin">20dp</dimen>
-    <dimen name="layout_shadow_margin">4dp</dimen>
+    <dimen name="layout_bottom_margin">16dp</dimen>
+    <dimen name="layout_shadow_margin">8dp</dimen>
 
     <!-- Dimensions for the > arrow on the side of the screen -->
     <dimen name="details_arrow_size">24sp</dimen>
