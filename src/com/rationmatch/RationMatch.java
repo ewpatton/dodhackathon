@@ -49,6 +49,10 @@ public class RationMatch extends Activity {
       i.setClass(this.getApplicationContext(), NutritionalReference.class);
       startActivity(i);
       break;
+    case R.id.lets_eat_entry:
+    	Intent j = new Intent();
+    	j.setClass(this.getApplicationContext(), Menus.class);
+    	startActivity(j);
     default:
       break;
     }
