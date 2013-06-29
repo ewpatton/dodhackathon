@@ -1,20 +1,28 @@
 package com.rationmatch;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.rationmatch.util.RdfUtil;
+
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 
 public class FullImageActivity extends Activity {
 	
-	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
+
 		setContentView(R.layout.full_image);
 		
 		// get intent data
 		Intent i = getIntent();
+		
 		
 		// Selected image id
 		int position = i.getExtras().getInt("id");
