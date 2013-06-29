@@ -1,16 +1,78 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/skyblue"
     tools:context=".RationMatch" >
-
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/white">
+        <TextView android:text="@string/hello_soldier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="12dp"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/separator"
+            /> 
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/white"
+        >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+            <TextView android:text="Total Daily Calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView android:text="2386 cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:layout_weight="30" />
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/brown"
+                android:layout_weight="25" />
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:layout_weight="45" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/white">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/separator">
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
