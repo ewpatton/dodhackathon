@@ -11,5 +11,6 @@
     <color name="brown">#C68E17</color>
     <color name="green">#B2C248</color>
     <color name="skyblue">#DEDEFF</color>
+    <color name="gray">#999999</color>
 
 </resources>
