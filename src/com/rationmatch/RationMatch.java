@@ -2,9 +2,11 @@ package com.rationmatch;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
 
 public class RationMatch extends Activity {
 
@@ -35,7 +37,7 @@ public class RationMatch extends Activity {
     getMenuInflater().inflate(R.menu.ration_match, menu);
     return true;
   }
-
+  
   protected void onViewClicked(int id, View view) {
     
   }
