@@ -5,11 +5,14 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="hello_soldier">Hello Soldier!</string>
-    
+
     <color name="white">#FFFFFF</color>
     <color name="red">#E77471</color>
     <color name="brown">#C68E17</color>
     <color name="green">#B2C248</color>
     <color name="skyblue">#DEDEFF</color>
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_ration_menu">RationMenuActivity</string>
 
 </resources>
