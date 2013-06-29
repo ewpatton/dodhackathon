@@ -28,13 +28,14 @@
 				<LinearLayout android:orientation="vertical"
 				    android:gravity="left" android:paddingLeft="@dimen/activity_horizontal_margin"
 				    android:paddingRight="@dimen/activity_horizontal_margin"
-					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_gravity="left" android:layout_weight="1">
 					<TextView android:text="Overview" android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:paddingBottom="4sp" android:textSize="18sp"
 						android:textStyle="bold" />
 					<LinearLayout android:layout_width="match_parent"
-						android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+						android:layout_height="wrap_content"
 						android:orientation="horizontal">
 						<TextView android:text="Total Daily Calories"
 							android:layout_width="wrap_content" android:textStyle="bold"
@@ -67,7 +68,7 @@
                 <TextView android:text=">" android:textSize="@dimen/details_arrow_size"
                     android:textStyle="bold" android:layout_width="wrap_content"
                     android:layout_height="fill_parent" android:gravity="right|center_vertical"
-                    android:layout_gravity="right" />
+                    android:layout_gravity="right"/>
 			</LinearLayout>
 			<LinearLayout android:layout_width="match_parent"
 				android:layout_height="@dimen/layout_bottom_margin">
@@ -98,7 +99,7 @@
 				android:background="@drawable/separator">
 			</LinearLayout>
 		</LinearLayout>
-		<LinearLayout android:id="@+id/history_entry"
+		<LinearLayout android:id="@+id/trade_entry"
 			android:layout_width="fill_parent" android:layout_height="wrap_content"
 			android:background="@drawable/selector" android:paddingTop="@dimen/activity_vertical_margin"
 			android:orientation="vertical">
@@ -107,7 +108,7 @@
 				android:paddingLeft="@dimen/activity_horizontal_margin"
 				android:paddingRight="@dimen/activity_horizontal_margin"
 				android:paddingBottom="@dimen/layout_bottom_margin">
-				<TextView android:text="History" android:textSize="18sp"
+				<TextView android:text="Trade" android:textSize="18sp"
 					android:textStyle="bold" android:gravity="center_vertical"
 					android:layout_width="wrap_content" android:layout_height="fill_parent" />
 				<TextView android:text=">" android:textSize="@dimen/details_arrow_size"

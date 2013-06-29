@@ -24,7 +24,7 @@ public class RationMatch extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_ration_match);
     int[] viewsToBind = { R.id.overview_layout, R.id.lets_eat_entry,
-        R.id.history_entry, R.id.nutrient_reference_entry, R.id.settings_entry};
+        R.id.trade_entry, R.id.nutrient_reference_entry, R.id.settings_entry};
     for(int i=0;i<viewsToBind.length;i++) {
       View v = findViewById(viewsToBind[i]);
       v.setOnClickListener(createClickListener(i));
