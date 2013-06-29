@@ -1,0 +1,2135 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/provenance/mre/version/2013/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix mre: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/> .
+@prefix military-nutrition_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/vocab/> .
+@prefix base_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/vocab/> .
+@prefix mre_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/vocab/> .
+@prefix raw: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/vocab/raw/> .
+@prefix mre_global_value: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:carbohydrates_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "CARBOHYDRATES_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CARBOHYDRATES_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:calcium_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "CALCIUM_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CALCIUM_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:sodium_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "SODIUM_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SODIUM_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:calcium_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "CALCIUM_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CALCIUM_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:item a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "ITEM" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "ITEM" ;
+	rdfs:range rdfs:Literal .
+
+raw:sugars_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "SUGARS_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SUGARS_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitamink_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "VITAMINK_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINK_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:iron_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "IRON_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "IRON_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:totalfat_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "TOTALFAT_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "TOTALFAT_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitamine_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "VITAMINE_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINE_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitaminb6_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "VITAMINB6_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINB6_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:carbohydrates_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "CARBOHYDRATES_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CARBOHYDRATES_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:calories a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "CALORIES" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CALORIES" ;
+	rdfs:range rdfs:Literal .
+
+raw:saturatedfat_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "SATURATEDFAT_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SATURATEDFAT_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:weight a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "WEIGHT" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "WEIGHT" ;
+	rdfs:range rdfs:Literal .
+
+raw:saturatedfat_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "SATURATEDFAT_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SATURATEDFAT_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:dietaryfiber_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "DIETARYFIBER_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "DIETARYFIBER_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:selenium_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "SELENIUM_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SELENIUM_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:iodine_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "IODINE_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "IODINE_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitaminb12_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "VITAMINB12_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINB12_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:cholesterol_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "CHOLESTEROL_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CHOLESTEROL_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:thiamin_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "THIAMIN_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "THIAMIN_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:folicacid_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "FOLICACID_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "FOLICACID_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitaminc_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "VITAMINC_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINC_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:dietaryfiber_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "DIETARYFIBER_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "DIETARYFIBER_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:ration a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "RATION" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "RATION" ;
+	rdfs:range rdfs:Literal .
+
+raw:phosphorous_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "PHOSPHOROUS_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "PHOSPHOROUS_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:magnesium_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "MAGNESIUM_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "MAGNESIUM_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:sodium_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "SODIUM_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SODIUM_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:potassium_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "POTASSIUM_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "POTASSIUM_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitamina_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "VITAMINA_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINA_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:iron_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "IRON_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "IRON_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:niacin_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "NIACIN_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "NIACIN_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:totalfat_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "TOTALFAT_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "TOTALFAT_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:menu a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "MENU" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "MENU" ;
+	rdfs:range rdfs:Literal .
+
+raw:riboflavin_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "RIBOFLAVIN_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "RIBOFLAVIN_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:protein_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "PROTEIN_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "PROTEIN_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:transfat_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "TRANSFAT_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "TRANSFAT_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:cholesterol_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "CHOLESTEROL_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CHOLESTEROL_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitaminc_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "VITAMINC_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINC_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitamina_iu a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "VITAMINA_IU" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINA_IU" ;
+	rdfs:range rdfs:Literal .
+
+raw:zinc_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "ZINC_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "ZINC_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:itemtype a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "ITEMTYPE" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "ITEMTYPE" ;
+	rdfs:range rdfs:Literal .
+
+mre:thing_2 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "29.59" ;
+	raw:calcium_dv ".08" ;
+	raw:sodium_mg "812.66" ;
+	raw:calcium_mg "78.32" ;
+	raw:item "Chili with Beans" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg "3.61" ;
+	raw:iron_mg "3.95" ;
+	raw:totalfat_g "11.05" ;
+	raw:vitamine_mg "1.34" ;
+	raw:vitaminb6_mg ".31" ;
+	raw:carbohydrates_dv ".1" ;
+	raw:calories "303.42" ;
+	raw:saturatedfat_g "4.45" ;
+	raw:weight "227" ;
+	raw:saturatedfat_dv ".22" ;
+	raw:dietaryfiber_dv ".28" ;
+	raw:selenium_mcg "16.87" ;
+	raw:iodine_mcg "10.76" ;
+	raw:vitaminb12_mcg "1.76" ;
+	raw:cholesterol_mg "32.6" ;
+	raw:thiamin_mg ".08" ;
+	raw:folicacid_mcg "45.25" ;
+	raw:vitaminc_dv ".04" ;
+	raw:dietaryfiber_g "6.89" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "133.8" ;
+	raw:magnesium_mg "60.53" ;
+	raw:sodium_dv ".34" ;
+	raw:potassium_mg "769.53" ;
+	raw:vitamina_dv ".26" ;
+	raw:iron_dv ".22" ;
+	raw:niacin_mg "3.63" ;
+	raw:totalfat_dv ".17" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".36" ;
+	raw:protein_g "20.96" ;
+	raw:transfat_g ".75" ;
+	raw:cholesterol_dv ".11" ;
+	raw:vitaminc_mg "2.27" ;
+	raw:vitamina_iu "1285.13" ;
+	raw:zinc_mg "3.7" ;
+	raw:itemtype "Entree" ;
+	ov:csvRow "2"^^xsd:integer .
+
+mre:thing_3 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "26.54" ;
+	raw:calcium_dv ".03" ;
+	raw:sodium_mg "104.92" ;
+	raw:calcium_mg "27.95" ;
+	raw:item "Ranger Bar>Banana Nut" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg ".12" ;
+	raw:iron_mg ".82" ;
+	raw:totalfat_g "10.75" ;
+	raw:vitamine_mg "2.17" ;
+	raw:vitaminb6_mg ".06" ;
+	raw:carbohydrates_dv ".09" ;
+	raw:calories "214.14" ;
+	raw:saturatedfat_g "2.61" ;
+	raw:weight "43" ;
+	raw:saturatedfat_dv ".13" ;
+	raw:dietaryfiber_dv ".04" ;
+	raw:selenium_mcg "4.3" ;
+	raw:iodine_mcg ".04" ;
+	raw:vitaminb12_mcg ".02" ;
+	raw:cholesterol_mg "7.83" ;
+	raw:thiamin_mg ".11" ;
+	raw:folicacid_mcg "22.79" ;
+	raw:vitaminc_dv "0" ;
+	raw:dietaryfiber_g ".9" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "72.24" ;
+	raw:magnesium_mg "16.34" ;
+	raw:sodium_dv ".04" ;
+	raw:potassium_mg "67.08" ;
+	raw:vitamina_dv "0" ;
+	raw:iron_dv ".05" ;
+	raw:niacin_mg "1.13" ;
+	raw:totalfat_dv ".17" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".09" ;
+	raw:protein_g "2.84" ;
+	raw:transfat_g "1.7" ;
+	raw:cholesterol_dv ".03" ;
+	raw:vitaminc_mg ".19" ;
+	raw:vitamina_iu "0" ;
+	raw:zinc_mg ".37" ;
+	raw:itemtype "MRE 33>Ranger Bar" ;
+	ov:csvRow "3"^^xsd:integer .
+
+mre:thing_4 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "27.78" ;
+	raw:calcium_dv ".03" ;
+	raw:sodium_mg "95.46" ;
+	raw:calcium_mg "29.2" ;
+	raw:item "Ranger Bar>Caramel Apple" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg ".2" ;
+	raw:iron_mg "1.61" ;
+	raw:totalfat_g "9.03" ;
+	raw:vitamine_mg ".92" ;
+	raw:vitaminb6_mg ".1" ;
+	raw:carbohydrates_dv ".09" ;
+	raw:calories "197.37" ;
+	raw:saturatedfat_g "2.58" ;
+	raw:weight "43" ;
+	raw:saturatedfat_dv ".13" ;
+	raw:dietaryfiber_dv ".04" ;
+	raw:selenium_mcg "2.84" ;
+	raw:iodine_mcg "1.3" ;
+	raw:vitaminb12_mcg ".27" ;
+	raw:cholesterol_mg "10.5" ;
+	raw:thiamin_mg ".14" ;
+	raw:folicacid_mcg "61.42" ;
+	raw:vitaminc_dv ".01" ;
+	raw:dietaryfiber_g ".99" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "44.82" ;
+	raw:magnesium_mg "11.35" ;
+	raw:sodium_dv ".04" ;
+	raw:potassium_mg "61.06" ;
+	raw:vitamina_dv ".01" ;
+	raw:iron_dv ".09" ;
+	raw:niacin_mg "1.26" ;
+	raw:totalfat_dv ".14" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".16" ;
+	raw:protein_g "2.11" ;
+	raw:transfat_g "2.38" ;
+	raw:cholesterol_dv ".04" ;
+	raw:vitaminc_mg ".43" ;
+	raw:vitamina_iu "60.2" ;
+	raw:zinc_mg ".29" ;
+	raw:itemtype "MRE 33>Ranger Bar" ;
+	ov:csvRow "4"^^xsd:integer .
+
+mre:thing_5 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "27.05" ;
+	raw:calcium_dv ".03" ;
+	raw:sodium_mg "73.53" ;
+	raw:calcium_mg "34.79" ;
+	raw:item "Ranger Bar>Chocolate Covered Chocolate Chip" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg ".2" ;
+	raw:iron_mg "1.97" ;
+	raw:totalfat_g "10.75" ;
+	raw:vitamine_mg ".43" ;
+	raw:vitaminb6_mg ".05" ;
+	raw:carbohydrates_dv ".09" ;
+	raw:calories "210.27" ;
+	raw:saturatedfat_g "5.07" ;
+	raw:weight "43" ;
+	raw:saturatedfat_dv ".25" ;
+	raw:dietaryfiber_dv ".06" ;
+	raw:selenium_mcg "6.67" ;
+	raw:iodine_mcg "1.3" ;
+	raw:vitaminb12_mcg ".13" ;
+	raw:cholesterol_mg "10.5" ;
+	raw:thiamin_mg ".09" ;
+	raw:folicacid_mcg "15.27" ;
+	raw:vitaminc_dv ".01" ;
+	raw:dietaryfiber_g "1.41" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "81.7" ;
+	raw:magnesium_mg "25.93" ;
+	raw:sodium_dv ".03" ;
+	raw:potassium_mg "115.24" ;
+	raw:vitamina_dv "0" ;
+	raw:iron_dv ".11" ;
+	raw:niacin_mg ".82" ;
+	raw:totalfat_dv ".17" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".09" ;
+	raw:protein_g "2.64" ;
+	raw:transfat_g "1.58" ;
+	raw:cholesterol_dv ".04" ;
+	raw:vitaminc_mg ".43" ;
+	raw:vitamina_iu "0" ;
+	raw:zinc_mg ".46" ;
+	raw:itemtype "MRE 33>Ranger Bar" ;
+	ov:csvRow "5"^^xsd:integer .
+
+mre:thing_6 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "29.03" ;
+	raw:calcium_dv ".03" ;
+	raw:sodium_mg "89.01" ;
+	raw:calcium_mg "33.15" ;
+	raw:item "Ranger Bar>Cran-apple" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg "" ;
+	raw:iron_mg ".87" ;
+	raw:totalfat_g "7.61" ;
+	raw:vitamine_mg ".56" ;
+	raw:vitaminb6_mg ".02" ;
+	raw:carbohydrates_dv ".1" ;
+	raw:calories "190.49" ;
+	raw:saturatedfat_g "1.66" ;
+	raw:weight "43" ;
+	raw:saturatedfat_dv ".08" ;
+	raw:dietaryfiber_dv ".05" ;
+	raw:selenium_mcg "8.94" ;
+	raw:iodine_mcg "" ;
+	raw:vitaminb12_mcg ".16" ;
+	raw:cholesterol_mg "10" ;
+	raw:thiamin_mg ".1" ;
+	raw:folicacid_mcg "14.58" ;
+	raw:vitaminc_dv ".3" ;
+	raw:dietaryfiber_g "1.31" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "70.09" ;
+	raw:magnesium_mg "13.72" ;
+	raw:sodium_dv ".04" ;
+	raw:potassium_mg "61.06" ;
+	raw:vitamina_dv "0" ;
+	raw:iron_dv ".05" ;
+	raw:niacin_mg "1.05" ;
+	raw:totalfat_dv ".12" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".09" ;
+	raw:protein_g "2.27" ;
+	raw:transfat_g "1.98" ;
+	raw:cholesterol_dv ".03" ;
+	raw:vitaminc_mg "17.72" ;
+	raw:vitamina_iu "0" ;
+	raw:zinc_mg ".27" ;
+	raw:itemtype "MRE 33>Ranger Bar" ;
+	ov:csvRow "6"^^xsd:integer .
+
+mre:thing_7 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "27.6" ;
+	raw:calcium_dv ".03" ;
+	raw:sodium_mg "90.73" ;
+	raw:calcium_mg "31.27" ;
+	raw:item "Group Average - MRE 33>Ranger Bar" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg ".16" ;
+	raw:iron_mg "1.32" ;
+	raw:totalfat_g "9.54" ;
+	raw:vitamine_mg "1.02" ;
+	raw:vitaminb6_mg ".06" ;
+	raw:carbohydrates_dv ".09" ;
+	raw:calories "203.07" ;
+	raw:saturatedfat_g "2.98" ;
+	raw:weight "43" ;
+	raw:saturatedfat_dv ".15" ;
+	raw:dietaryfiber_dv ".05" ;
+	raw:selenium_mcg "5.69" ;
+	raw:iodine_mcg ".67" ;
+	raw:vitaminb12_mcg ".14" ;
+	raw:cholesterol_mg "9.58" ;
+	raw:thiamin_mg ".11" ;
+	raw:folicacid_mcg "28.51" ;
+	raw:vitaminc_dv ".08" ;
+	raw:dietaryfiber_g "1.15" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "67.21" ;
+	raw:magnesium_mg "16.83" ;
+	raw:sodium_dv ".04" ;
+	raw:potassium_mg "76.11" ;
+	raw:vitamina_dv "0" ;
+	raw:iron_dv ".07" ;
+	raw:niacin_mg "1.07" ;
+	raw:totalfat_dv ".15" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".11" ;
+	raw:protein_g "2.46" ;
+	raw:transfat_g "1.91" ;
+	raw:cholesterol_dv ".03" ;
+	raw:vitaminc_mg "4.69" ;
+	raw:vitamina_iu "15.05" ;
+	raw:zinc_mg ".35" ;
+	raw:itemtype "MRE 33>Ranger Bar" ;
+	ov:csvRow "7"^^xsd:integer .
+
+mre:thing_8 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "38.7" ;
+	raw:calcium_dv ".04" ;
+	raw:sodium_mg "411.8" ;
+	raw:calcium_mg "40.68" ;
+	raw:item "Cornbread" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg "0" ;
+	raw:iron_mg "1.27" ;
+	raw:totalfat_g "10.08" ;
+	raw:vitamine_mg ".93" ;
+	raw:vitaminb6_mg ".02" ;
+	raw:carbohydrates_dv ".13" ;
+	raw:calories "259.86" ;
+	raw:saturatedfat_g "1.92" ;
+	raw:weight "71" ;
+	raw:saturatedfat_dv ".1" ;
+	raw:dietaryfiber_dv ".06" ;
+	raw:selenium_mcg "9.3" ;
+	raw:iodine_mcg "0" ;
+	raw:vitaminb12_mcg ".6" ;
+	raw:cholesterol_mg "9.02" ;
+	raw:thiamin_mg ".13" ;
+	raw:folicacid_mcg "34.22" ;
+	raw:vitaminc_dv ".01" ;
+	raw:dietaryfiber_g "1.45" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "161.88" ;
+	raw:magnesium_mg "10.86" ;
+	raw:sodium_dv ".17" ;
+	raw:potassium_mg "62.27" ;
+	raw:vitamina_dv "0" ;
+	raw:iron_dv ".07" ;
+	raw:niacin_mg "1.8" ;
+	raw:totalfat_dv ".16" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".18" ;
+	raw:protein_g "3.51" ;
+	raw:transfat_g "1.09" ;
+	raw:cholesterol_dv ".03" ;
+	raw:vitaminc_mg ".71" ;
+	raw:vitamina_iu "0" ;
+	raw:zinc_mg ".26" ;
+	raw:itemtype "Bread/Crax" ;
+	ov:csvRow "8"^^xsd:integer .
+
+mre:thing_9 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "27.54" ;
+	raw:calcium_dv ".22" ;
+	raw:sodium_mg "169.99" ;
+	raw:calcium_mg "222.94" ;
+	raw:item "Crackers>Plain" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg "" ;
+	raw:iron_mg "2.12" ;
+	raw:totalfat_g "5.74" ;
+	raw:vitamine_mg ".53" ;
+	raw:vitaminb6_mg ".36" ;
+	raw:carbohydrates_dv ".09" ;
+	raw:calories "174.68" ;
+	raw:saturatedfat_g "1.23" ;
+	raw:weight "38.6" ;
+	raw:saturatedfat_dv ".06" ;
+	raw:dietaryfiber_dv ".1" ;
+	raw:selenium_mcg "2.33" ;
+	raw:iodine_mcg "" ;
+	raw:vitaminb12_mcg ".05" ;
+	raw:cholesterol_mg "0" ;
+	raw:thiamin_mg ".37" ;
+	raw:folicacid_mcg "62.32" ;
+	raw:vitaminc_dv ".02" ;
+	raw:dietaryfiber_g "2.59" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "44.15" ;
+	raw:magnesium_mg "10.47" ;
+	raw:sodium_dv ".07" ;
+	raw:potassium_mg "61.52" ;
+	raw:vitamina_dv "0" ;
+	raw:iron_dv ".12" ;
+	raw:niacin_mg "2.81" ;
+	raw:totalfat_dv ".09" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".37" ;
+	raw:protein_g "3.41" ;
+	raw:transfat_g "1.73" ;
+	raw:cholesterol_dv "0" ;
+	raw:vitaminc_mg "1.04" ;
+	raw:vitamina_iu "11.1" ;
+	raw:zinc_mg ".36" ;
+	raw:itemtype "Bread/Crax" ;
+	ov:csvRow "9"^^xsd:integer .
+
+mre:thing_10 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "4.41" ;
+	raw:calcium_dv ".16" ;
+	raw:sodium_mg "607.05" ;
+	raw:calcium_mg "160.77" ;
+	raw:item "Cheese Spread>Cheddar with Jalapeno Peppers and Vitamin D" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg "0" ;
+	raw:iron_mg ".09" ;
+	raw:totalfat_g "16.61" ;
+	raw:vitamine_mg "1.24" ;
+	raw:vitaminb6_mg ".79" ;
+	raw:carbohydrates_dv ".01" ;
+	raw:calories "160.51" ;
+	raw:saturatedfat_g "8.48" ;
+	raw:weight "42.75" ;
+	raw:saturatedfat_dv ".42" ;
+	raw:dietaryfiber_dv ".01" ;
+	raw:selenium_mcg "6.37" ;
+	raw:iodine_mcg "0" ;
+	raw:vitaminb12_mcg ".1" ;
+	raw:cholesterol_mg "45" ;
+	raw:thiamin_mg ".67" ;
+	raw:folicacid_mcg "4.07" ;
+	raw:vitaminc_dv "0" ;
+	raw:dietaryfiber_g ".37" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "268.28" ;
+	raw:magnesium_mg "6.54" ;
+	raw:sodium_dv ".25" ;
+	raw:potassium_mg "29.6" ;
+	raw:vitamina_dv ".62" ;
+	raw:iron_dv ".01" ;
+	raw:niacin_mg ".04" ;
+	raw:totalfat_dv ".26" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".12" ;
+	raw:protein_g "5.22" ;
+	raw:transfat_g ".74" ;
+	raw:cholesterol_dv ".15" ;
+	raw:vitaminc_mg ".22" ;
+	raw:vitamina_iu "3101.85" ;
+	raw:zinc_mg ".89" ;
+	raw:itemtype "Spread" ;
+	ov:csvRow "10"^^xsd:integer .
+
+mre:thing_11 dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	void:inDataset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> ;
+	raw:carbohydrates_g "1.13" ;
+	raw:calcium_dv "0" ;
+	raw:sodium_mg ".6" ;
+	raw:calcium_mg "2.97" ;
+	raw:item "Red Pepper>Ground" ;
+	raw:sugars_g "0" ;
+	raw:vitamink_mcg "" ;
+	raw:iron_mg ".16" ;
+	raw:totalfat_g ".35" ;
+	raw:vitamine_mg ".1" ;
+	raw:vitaminb6_mg ".04" ;
+	raw:carbohydrates_dv "0" ;
+	raw:calories "6.36" ;
+	raw:saturatedfat_g "" ;
+	raw:weight "2" ;
+	raw:saturatedfat_dv "" ;
+	raw:dietaryfiber_dv "" ;
+	raw:selenium_mcg ".18" ;
+	raw:iodine_mcg "" ;
+	raw:vitaminb12_mcg "0" ;
+	raw:cholesterol_mg "0" ;
+	raw:thiamin_mg ".01" ;
+	raw:folicacid_mcg "2.12" ;
+	raw:vitaminc_dv ".03" ;
+	raw:dietaryfiber_g "" ;
+	raw:ration "MRE33" ;
+	raw:phosphorous_mg "5.87" ;
+	raw:magnesium_mg "3.04" ;
+	raw:sodium_dv "0" ;
+	raw:potassium_mg "40.28" ;
+	raw:vitamina_dv "" ;
+	raw:iron_dv ".01" ;
+	raw:niacin_mg ".17" ;
+	raw:totalfat_dv ".01" ;
+	raw:menu "MENU 1" ;
+	raw:riboflavin_mg ".02" ;
+	raw:protein_g ".24" ;
+	raw:transfat_g "" ;
+	raw:cholesterol_dv "0" ;
+	raw:vitaminc_mg "1.59" ;
+	raw:vitamina_iu "" ;
+	raw:zinc_mg ".05" ;
+	raw:itemtype "Condiment" ;
+	ov:csvRow "11"^^xsd:integer .
+
+# CSV2RDF4LOD DATASET METADATA (reproduced from above):
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/provenance/mre/version/2013/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix mre: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/> .
+@prefix military-nutrition_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/vocab/> .
+@prefix base_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/vocab/> .
+@prefix mre_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/vocab/> .
+@prefix raw: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/vocab/raw/> .
+@prefix mre_global_value: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+raw:carbohydrates_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "CARBOHYDRATES_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CARBOHYDRATES_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:calcium_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "CALCIUM_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CALCIUM_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:sodium_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "SODIUM_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SODIUM_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:calcium_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "CALCIUM_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CALCIUM_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:item a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "ITEM" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "ITEM" ;
+	rdfs:range rdfs:Literal .
+
+raw:sugars_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "SUGARS_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SUGARS_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitamink_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "VITAMINK_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINK_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:iron_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "IRON_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "IRON_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:totalfat_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "TOTALFAT_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "TOTALFAT_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitamine_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "VITAMINE_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINE_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitaminb6_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "VITAMINB6_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINB6_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:carbohydrates_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "CARBOHYDRATES_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CARBOHYDRATES_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:calories a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "CALORIES" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CALORIES" ;
+	rdfs:range rdfs:Literal .
+
+raw:saturatedfat_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "SATURATEDFAT_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SATURATEDFAT_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:weight a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "WEIGHT" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "WEIGHT" ;
+	rdfs:range rdfs:Literal .
+
+raw:saturatedfat_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "SATURATEDFAT_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SATURATEDFAT_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:dietaryfiber_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "DIETARYFIBER_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "DIETARYFIBER_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:selenium_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "SELENIUM_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SELENIUM_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:iodine_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "IODINE_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "IODINE_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitaminb12_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "VITAMINB12_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINB12_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:cholesterol_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "CHOLESTEROL_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CHOLESTEROL_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:thiamin_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "THIAMIN_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "THIAMIN_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:folicacid_mcg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "FOLICACID_MCG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "FOLICACID_MCG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitaminc_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "VITAMINC_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINC_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:dietaryfiber_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "DIETARYFIBER_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "DIETARYFIBER_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:ration a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "RATION" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "RATION" ;
+	rdfs:range rdfs:Literal .
+
+raw:phosphorous_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "PHOSPHOROUS_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "PHOSPHOROUS_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:magnesium_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "MAGNESIUM_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "MAGNESIUM_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:sodium_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "SODIUM_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "SODIUM_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:potassium_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "POTASSIUM_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "POTASSIUM_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitamina_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "VITAMINA_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINA_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:iron_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "IRON_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "IRON_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:niacin_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "NIACIN_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "NIACIN_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:totalfat_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "TOTALFAT_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "TOTALFAT_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:menu a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "MENU" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "MENU" ;
+	rdfs:range rdfs:Literal .
+
+raw:riboflavin_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "RIBOFLAVIN_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "RIBOFLAVIN_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:protein_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "PROTEIN_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "PROTEIN_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:transfat_g a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "TRANSFAT_G" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "TRANSFAT_G" ;
+	rdfs:range rdfs:Literal .
+
+raw:cholesterol_dv a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "CHOLESTEROL_DV" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "CHOLESTEROL_DV" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitaminc_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "VITAMINC_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINC_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:vitamina_iu a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "VITAMINA_IU" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "VITAMINA_IU" ;
+	rdfs:range rdfs:Literal .
+
+raw:zinc_mg a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "ZINC_MG" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "ZINC_MG" ;
+	rdfs:range rdfs:Literal .
+
+raw:itemtype a rdf:Property ;
+	ov:csvRow "1"^^xsd:integer ;
+	ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "ITEMTYPE" ;
+	dcterms:isReferencedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> ;
+	rdfs:label "ITEMTYPE" ;
+	rdfs:range rdfs:Literal .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd2: <http://www.w3.org/TR/xmlschema-2/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pmlp: <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj: <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix tw_service: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/> .
+@prefix tw_converter: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/> .
+@prefix provenance_raw: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/provenance/mre/version/2013/conversion/raw/> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbrcore: <http://purl.org/vocab/frbr/core#> .
+@prefix coin: <http://purl.org/court/def/2009/coin#> .
+@prefix mre: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/> .
+@prefix military-nutrition_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/vocab/> .
+@prefix base_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/vocab/> .
+@prefix mre_vocab: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/vocab/> .
+@prefix raw: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/vocab/raw/> .
+@prefix mre_global_value: <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/void.ttl> a void:DatasetDescription ;
+	foaf:topic <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre> ;
+	foaf:primaryTopic <https://github.com/ewpatton/dodhackathon/tree/master/rdf/void> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/void> a void:Dataset ;
+	void:subset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre> a military-nutrition_vocab:Dataset , conversion:Dataset , conversion:AbstractDataset , void:Dataset ;
+	conversion:base_uri "https://github.com/ewpatton/dodhackathon/tree/master/rdf" ;
+	conversion:source_identifier "military-nutrition" ;
+	conversion:dataset_identifier "mre" ;
+	dcterms:contributor <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition> ;
+	dcterms:identifier "military-nutrition mre" ;
+	foaf:isPrimaryTopicOf <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset_page/mre> ;
+	void:subset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> , <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/subset/meta> ;
+	dcterms:modified "2013-06-28T23:29:02.271-05:00"^^xsd:dateTime .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013> a military-nutrition_vocab:Dataset , conversion:Dataset , conversion:VersionedDataset , void:Dataset ;
+	conversion:base_uri "https://github.com/ewpatton/dodhackathon/tree/master/rdf" ;
+	conversion:source_identifier "military-nutrition" ;
+	conversion:dataset_identifier "mre" ;
+	conversion:version_identifier "2013" ;
+	conversion:dataset_version "2013" ;
+	dcterms:contributor <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition> ;
+	dcterms:identifier "military-nutrition mre 2013" ;
+	dcterms:modified "2013-06-28T23:29:02.271-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset_page/mre/version/2013> ;
+	void:dataDump <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/file/mre/version/2013/conversion/military-nutrition-mre-2013.ttl.gz> ;
+	void:subset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> a military-nutrition_vocab:Dataset , conversion:Dataset , conversion:LayerDataset , void:Dataset , conversion:RawDataset ;
+	dcterms:modified "2013-06-28T23:29:02.271-05:00"^^xsd:dateTime ;
+	conversion:base_uri "https://github.com/ewpatton/dodhackathon/tree/master/rdf" ;
+	conversion:source_identifier "military-nutrition" ;
+	conversion:dataset_identifier "mre" ;
+	conversion:version_identifier "2013" ;
+	conversion:dataset_version "2013" ;
+	conversion:conversion_identifier "raw" ;
+	foaf:isPrimaryTopicOf <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset_page/mre/version/2013/conversion/raw> ;
+	void:dataDump <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/file/mre/version/2013/conversion/military-nutrition-mre-2013.raw.ttl.gz> ;
+	void:subset <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw/subset/sample> ;
+	conversion:uses_predicate raw:carbohydrates_g , void:inDataset , raw:calories , raw:dietaryfiber_dv , ov:csvRow , raw:folicacid_mcg , raw:vitaminc_mg , dcterms:isReferencedBy , raw:itemtype , raw:carbohydrates_dv , raw:thiamin_mg , raw:calcium_mg , raw:cholesterol_mg , raw:sugars_g , raw:saturatedfat_g , raw:transfat_g , raw:vitamink_mcg , raw:cholesterol_dv , raw:vitamina_dv , raw:calcium_dv , raw:zinc_mg , raw:iron_mg , raw:riboflavin_mg , raw:weight , raw:selenium_mcg , raw:sodium_dv , raw:vitamine_mg , raw:ration , raw:saturatedfat_dv , raw:menu , raw:vitamina_iu , raw:vitaminc_dv , raw:protein_g , raw:totalfat_dv , raw:vitaminb6_mg , raw:phosphorous_mg , raw:vitaminb12_mcg , raw:magnesium_mg , raw:iodine_mcg , raw:iron_dv , raw:totalfat_g , raw:sodium_mg , raw:potassium_mg , raw:item , raw:niacin_mg , raw:dietaryfiber_g ;
+	void:vocabulary <https://github.com/ewpatton/dodhackathon/tree/master/rdf> , <http://rdfs.org/ns/void#> , <http://open.vocab.org/terms/> , <http://purl.org/dc/terms/> .
+
+raw:carbohydrates_g rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+void:inDataset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+raw:calories rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:dietaryfiber_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+ov:csvRow rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://open.vocab.org> .
+
+raw:folicacid_mcg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:vitaminc_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+dcterms:isReferencedBy rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+raw:itemtype rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:carbohydrates_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:thiamin_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:calcium_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:cholesterol_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:sugars_g rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:saturatedfat_g rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:transfat_g rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:vitamink_mcg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:cholesterol_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:vitamina_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:calcium_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:zinc_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:iron_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:riboflavin_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:weight rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:selenium_mcg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:sodium_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:vitamine_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:ration rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:saturatedfat_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:menu rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:vitamina_iu rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:vitaminc_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:protein_g rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:totalfat_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:vitaminb6_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:phosphorous_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:vitaminb12_mcg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:magnesium_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:iodine_mcg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:iron_dv rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:totalfat_g rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:sodium_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:potassium_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:item rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:niacin_mg rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+raw:dietaryfiber_g rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> void:exampleResource mre:thing_2 , mre:thing_11 ;
+	dcterms:created "2013-06-28T23:29:01.819-05:00"^^xsd:dateTime ;
+	dcterms:contributor <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition> ;
+	dcterms:identifier "military-nutrition mre 2013 raw" .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw/subset/sample> a military-nutrition_vocab:Dataset , conversion:Dataset , conversion:DatasetSample , void:Dataset ;
+	conversion:base_uri "https://github.com/ewpatton/dodhackathon/tree/master/rdf" ;
+	conversion:source_identifier "military-nutrition" ;
+	conversion:dataset_identifier "mre" ;
+	conversion:version_identifier "2013" ;
+	conversion:dataset_version "2013" ;
+	conversion:conversion_identifier "raw" ;
+	dcterms:modified "2013-06-28T23:29:02.271-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset_page/mre/version/2013/conversion/raw/subset/sample> ;
+	void:dataDump <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/file/mre/version/2013/conversion/military-nutrition-mre-2013.raw.sample.ttl> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/file/mre/version/2013/conversion/military-nutrition-mre-2013.raw.sample.ttl> dcterms:format <http://www.w3.org/ns/formats/Turtle> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition> a foaf:Agent ;
+	dcterms:identifier "military-nutrition" ;
+	foaf:isPrimaryTopicOf <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source_page/military-nutrition> .
+
+_:node17u6vk26mx2 vann:preferredNamespacePrefix "rdf" ;
+	vann:preferredNamespaceUri "http://www.w3.org/1999/02/22-rdf-syntax-ns#" .
+
+_:node17u6vk26mx3 vann:preferredNamespacePrefix "rdfs" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#" .
+
+_:node17u6vk26mx4 vann:preferredNamespacePrefix "xsd" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#" .
+
+_:node17u6vk26mx5 vann:preferredNamespacePrefix "xsd2" ;
+	vann:preferredNamespaceUri "http://www.w3.org/TR/xmlschema-2/#" .
+
+_:node17u6vk26mx6 vann:preferredNamespacePrefix "owl" ;
+	vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#" .
+
+_:node17u6vk26mx7 vann:preferredNamespacePrefix "pmlp" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-provenance.owl#" .
+
+_:node17u6vk26mx8 vann:preferredNamespacePrefix "pmlj" ;
+	vann:preferredNamespaceUri "http://inference-web.org/2.0/pml-justification.owl#" .
+
+_:node17u6vk26mx9 vann:preferredNamespacePrefix "tw_service" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/" .
+
+_:node17u6vk26mx10 vann:preferredNamespacePrefix "tw_converter" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/tw-rpi-edu/service/csv2rdf4lod/version/2013-June-22/" .
+
+_:node17u6vk26mx11 vann:preferredNamespacePrefix "provenance_raw" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/provenance/mre/version/2013/conversion/raw/" .
+
+_:node17u6vk26mx12 vann:preferredNamespacePrefix "conversion" ;
+	vann:preferredNamespaceUri "http://purl.org/twc/vocab/conversion/" .
+
+_:node17u6vk26mx13 vann:preferredNamespacePrefix "ov" ;
+	vann:preferredNamespaceUri "http://open.vocab.org/terms/" .
+
+_:node17u6vk26mx14 vann:preferredNamespacePrefix "dcterms" ;
+	vann:preferredNamespaceUri "http://purl.org/dc/terms/" .
+
+_:node17u6vk26mx15 vann:preferredNamespacePrefix "foaf" ;
+	vann:preferredNamespaceUri "http://xmlns.com/foaf/0.1/" .
+
+_:node17u6vk26mx16 vann:preferredNamespacePrefix "void" ;
+	vann:preferredNamespaceUri "http://rdfs.org/ns/void#" .
+
+_:node17u6vk26mx17 vann:preferredNamespacePrefix "doap" ;
+	vann:preferredNamespaceUri "http://usefulinc.com/ns/doap#" .
+
+_:node17u6vk26mx18 vann:preferredNamespacePrefix "scovo" ;
+	vann:preferredNamespaceUri "http://purl.org/NET/scovo#" .
+
+_:node17u6vk26mx19 vann:preferredNamespacePrefix "qb" ;
+	vann:preferredNamespaceUri "http://purl.org/linked-data/cube#" .
+
+_:node17u6vk26mx20 vann:preferredNamespacePrefix "vann" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/vann/" .
+
+_:node17u6vk26mx21 vann:preferredNamespacePrefix "frbrcore" ;
+	vann:preferredNamespaceUri "http://purl.org/vocab/frbr/core#" .
+
+_:node17u6vk26mx22 vann:preferredNamespacePrefix "coin" ;
+	vann:preferredNamespaceUri "http://purl.org/court/def/2009/coin#" .
+
+_:node17u6vk26mx23 vann:preferredNamespacePrefix "mre" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/" .
+
+_:node17u6vk26mx24 vann:preferredNamespacePrefix "military-nutrition_vocab" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/vocab/" .
+
+_:node17u6vk26mx25 vann:preferredNamespacePrefix "base_vocab" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/vocab/" .
+
+_:node17u6vk26mx26 vann:preferredNamespacePrefix "mre_vocab" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/vocab/" .
+
+_:node17u6vk26mx27 vann:preferredNamespacePrefix "raw" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/vocab/raw/" .
+
+_:node17u6vk26mx28 vann:preferredNamespacePrefix "mre_global_value" ;
+	vann:preferredNamespaceUri "https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/" .
+
+_:node17u6vk26mx29 vann:preferredNamespacePrefix "sioc" ;
+	vann:preferredNamespaceUri "http://rdfs.org/sioc/ns#" .
+
+_:node17u6vk26mx1 rdfs:seeAlso _:node17u6vk26mx2 , _:node17u6vk26mx3 , _:node17u6vk26mx4 , _:node17u6vk26mx5 , _:node17u6vk26mx6 , _:node17u6vk26mx7 , _:node17u6vk26mx8 , _:node17u6vk26mx9 , _:node17u6vk26mx10 , _:node17u6vk26mx11 , _:node17u6vk26mx12 , _:node17u6vk26mx13 , _:node17u6vk26mx14 , _:node17u6vk26mx15 , _:node17u6vk26mx16 , _:node17u6vk26mx17 , _:node17u6vk26mx18 , _:node17u6vk26mx19 , _:node17u6vk26mx20 , _:node17u6vk26mx21 , _:node17u6vk26mx22 , _:node17u6vk26mx23 , _:node17u6vk26mx24 , _:node17u6vk26mx25 , _:node17u6vk26mx26 , _:node17u6vk26mx27 , _:node17u6vk26mx28 , _:node17u6vk26mx29 .
+
+provenance_raw:nodeset_1 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/file/mre/version/2013/conversion/military-nutrition-mre-2013.raw.sample.ttl> ;
+	pmlj:isConsequentOf provenance_raw:infstep_1 .
+
+provenance_raw:nodeset_2 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/file/mre/version/2013/conversion/military-nutrition-mre-2013.raw.ttl.gz> ;
+	pmlj:isConsequentOf provenance_raw:infstep_1 .
+
+provenance_raw:nodeset_3 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/file/mre/version/2013/conversion/military-nutrition-mre-2013.ttl.gz> ;
+	pmlj:isConsequentOf provenance_raw:infstep_1 .
+
+provenance_raw:infstep_1 a pmlj:InferenceStep ;
+	pmlj:hasInferenceEngine tw_converter:csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc ;
+	pmlj:hasAntecedentList _:node17u6vk26mx30 ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> _:node17u6vk26mx32 , _:node17u6vk26mx31 .
+
+<http://purl.org/twc/id/software/csv2rdf4lod> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> tw_converter:csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc .
+
+<http://data.lod2.eu/2011/tools/CSV2RDF4LOD> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> tw_converter:csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> tw_converter:csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc .
+
+tw_converter:csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc a pmlp:InferenceEngine , doap:Version ;
+	dcterms:identifier "csv2rdf4lod_19679c739db58bdf2e79b73984aaeacc" ;
+	dcterms:version "2013-June-22" ;
+	doap:revision "2013-June-22" ;
+	doap:platform "Java" ;
+	<http://www.w3.org/ns/prov#specializationOf> <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> .
+
+<http://purl.org/twc/id/software/csv2rdf4lod> rdfs:seeAlso <https://github.com/timrdf/csv2rdf4lod-automation/wiki> .
+
+<http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/csv2rdf4lod> a doap:Project ;
+	doap:implements <http://data-gov.tw.rpi.edu/wiki/Special:URIResolver/URI_design_for_RDF_conversion_of_CSV-based_data> , <http://purl.org/twc/vocab/conversion/> ;
+	dcterms:author <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:developer <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/GregoryToddWilliams> , <http://kasei.us/about/foaf.xrdf#greg> , <http://tw.rpi.edu/instances/JamesMcCusker> , <http://tw.rpi.edu/instances/ZhenningShangguan> ;
+	doap:maintainer <http://tw.rpi.edu/instances/TimLebo> ;
+	doap:documenter <http://tw.rpi.edu/instances/TimLebo> , <http://tw.rpi.edu/instances/JohannaFlores> , <http://tw.rpi.edu/instances/LiDing> , <http://tw.rpi.edu/instances/GinoGervasio> ;
+	doap:helper <http://tw.rpi.edu/instances/AlvaroGraves> , <http://tw.rpi.edu/instances/DominicDiFranzo> , <http://tw.rpi.edu/instances/GinoGervasio> , <http://tw.rpi.edu/instances/PingWang> , <http://tw.rpi.edu/instances/XianLi> , <http://tw.rpi.edu/instances/JamesMcCusker> , <http://www.w3.org/People/Eric/ericP-foaf#ericP> , <http://tw.rpi.edu/instances/AnkitSrivastava> , <http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> , <http://tw.rpi.edu/instances/AlexanderLahuerta> ;
+	doap:homepage <https://github.com/timrdf/csv2rdf4lod-automation/wiki> ;
+	doap:audience "Data modelers and architects that need (potentially non-RDB) tabular data encoded within the Resource Description Framework." ;
+	doap:shortdesc "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/" ;
+	doap:description "Converts CSV files to RDF using parameters specified by http://purl.org/twc/vocab/conversion/. Organizes datasets using 'source', 'dataset', and 'version' identifiers to allow for third-party aggregation, refinement, and integration of third-party data. Uses predicate 'layers' to allow backward-compatible refinements of Resources' descriptions. Minimizes human error and increases transparancy of conversion by using RDF-encoded interpretation parameters to control all processing." .
+
+_:node17u6vk26mx33 a doap:GitRepository ;
+	foaf:isPrimaryTopicOf <https://github.com/timrdf/csv2rdf4lod-automation> ;
+	doap:browse <https://github.com/timrdf/csv2rdf4lod-automation> .
+
+<http://tw.rpi.edu/instances/GregoryToddWilliams> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://kasei.us/about/foaf.xrdf#greg> .
+
+<http://tw.rpi.edu/instances/AlvaroGraves> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://alvaro.graves.cl> .
+
+<http://purl.org/twc/id/person/TimLebo> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://tw.rpi.edu/wiki/Special:URIResolver/Tim_Lebo> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://www.cs.rpi.edu/~weavej3/r/Tim_Lebo> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://tw.rpi.edu/instances/TimLebo> .
+
+<http://purl.org/twc/id/person/Maryam_Fazel-Zarandi> <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> <http://tw.rpi.edu/instances/MaryamFazel-Zarandi> .
+
+_:node17u6vk26mx30 a rdf:List ;
+	rdf:first provenance_raw:nodeset_4 .
+
+provenance_raw:nodeset_4 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/filemre/version/2013/source/meal-ready-to-eat-ration-menus-2013.csv> .
+
+_:node17u6vk26mx30 rdf:rest _:node17u6vk26mx34 .
+
+_:node17u6vk26mx34 a rdf:List ;
+	rdf:first provenance_raw:nodeset_5 .
+
+provenance_raw:nodeset_5 a pmlj:NodeSet ;
+	pmlj:hasConclusion <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/filemre/version/2013/automatic/meal-ready-to-eat-ration-menus-2013.csv.raw.params.ttl> .
+
+_:node17u6vk26mx32 <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/filemre/version/2013/automatic/meal-ready-to-eat-ration-menus-2013.csv.raw.params.ttl> .
+
+_:node17u6vk26mx34 rdf:rest rdf:nil .
+
+_:node17u6vk26mx32 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Parameters.owl#Parameters> .
+
+_:node17u6vk26mx31 a <http://inference-web.org/2.1exper/pml-provenance.owl#AntecedentRole> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/filemre/version/2013/source/meal-ready-to-eat-ration-menus-2013.csv> ;
+	<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> <http://inference-web.org/registry/ROLE/Input.owl#Input> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/filemre/version/2013/source/meal-ready-to-eat-ration-menus-2013.csv> a pmlp:Information ;
+	pmlp:hasFormat <http://iw.cs.utep.edu/registry/FMT/text/CSV.owl#CSV> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/filemre/version/2013/automatic/meal-ready-to-eat-ration-menus-2013.csv.raw.params.ttl> a pmlp:Information ;
+	pmlp:hasFormat <http://inference-web.org/registry/FMT/RDFAbstractSyntax.owl#RDFAbstractSyntax> .
+
+conversion:SameAsDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_class rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:has_version rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:MetaDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:num_triples rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhances rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:enhancement_layer rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:DatasetSample rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:source_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:VersionedDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:LayerDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:base_uri rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:uses_predicate rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:interpretation rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:symbol rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:dataset_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:conversion_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:AbstractDataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:null rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:subject_discriminator rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:Dataset rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+conversion:version_identifier rdfs:isDefinedBy <http://purl.org/twc/vocab/conversion/> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> conversion:base_uri "https://github.com/ewpatton/dodhackathon/tree/master/rdf"^^xsd:anyURI .
+
+_:node17u6vk27qx1 a conversion:RawConversionProcess ;
+	conversion:conversion_identifier "raw" .
+
+_:node17u6vk27qx2 a foaf:OnlineAccount ;
+	foaf:accountName "oshani" .
+
+_:node17u6vk27qx1 dcterms:creator _:node17u6vk27qx2 ;
+	dcterms:created "2013-06-28T23:29:00-04:00"^^xsd:dateTime ;
+	conversion:delimits_cell "," .
+
+_:node17u6vk27qx3 ov:csvCol "1"^^xsd:integer ;
+	ov:csvHeader "CARBOHYDRATES_G" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx3 .
+
+_:node17u6vk27qx4 ov:csvCol "2"^^xsd:integer ;
+	ov:csvHeader "CALCIUM_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx4 .
+
+_:node17u6vk27qx5 ov:csvCol "3"^^xsd:integer ;
+	ov:csvHeader "SODIUM_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx5 .
+
+_:node17u6vk27qx6 ov:csvCol "4"^^xsd:integer ;
+	ov:csvHeader "CALCIUM_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx6 .
+
+_:node17u6vk27qx7 ov:csvCol "5"^^xsd:integer ;
+	ov:csvHeader "ITEM" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx7 .
+
+_:node17u6vk27qx8 ov:csvCol "6"^^xsd:integer ;
+	ov:csvHeader "SUGARS_G" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx8 .
+
+_:node17u6vk27qx9 ov:csvCol "7"^^xsd:integer ;
+	ov:csvHeader "VITAMINK_MCG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx9 .
+
+_:node17u6vk27qx10 ov:csvCol "8"^^xsd:integer ;
+	ov:csvHeader "IRON_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx10 .
+
+_:node17u6vk27qx11 ov:csvCol "9"^^xsd:integer ;
+	ov:csvHeader "TOTALFAT_G" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx11 .
+
+_:node17u6vk27qx12 ov:csvCol "10"^^xsd:integer ;
+	ov:csvHeader "VITAMINE_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx12 .
+
+_:node17u6vk27qx13 ov:csvCol "11"^^xsd:integer ;
+	ov:csvHeader "VITAMINB6_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx13 .
+
+_:node17u6vk27qx14 ov:csvCol "12"^^xsd:integer ;
+	ov:csvHeader "CARBOHYDRATES_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx14 .
+
+_:node17u6vk27qx15 ov:csvCol "13"^^xsd:integer ;
+	ov:csvHeader "CALORIES" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx15 .
+
+_:node17u6vk27qx16 ov:csvCol "14"^^xsd:integer ;
+	ov:csvHeader "SATURATEDFAT_G" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx16 .
+
+_:node17u6vk27qx17 ov:csvCol "15"^^xsd:integer ;
+	ov:csvHeader "WEIGHT" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx17 .
+
+_:node17u6vk27qx18 ov:csvCol "16"^^xsd:integer ;
+	ov:csvHeader "SATURATEDFAT_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx18 .
+
+_:node17u6vk27qx19 ov:csvCol "17"^^xsd:integer ;
+	ov:csvHeader "DIETARYFIBER_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx19 .
+
+_:node17u6vk27qx20 ov:csvCol "18"^^xsd:integer ;
+	ov:csvHeader "SELENIUM_MCG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx20 .
+
+_:node17u6vk27qx21 ov:csvCol "19"^^xsd:integer ;
+	ov:csvHeader "IODINE_MCG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx21 .
+
+_:node17u6vk27qx22 ov:csvCol "20"^^xsd:integer ;
+	ov:csvHeader "VITAMINB12_MCG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx22 .
+
+_:node17u6vk27qx23 ov:csvCol "21"^^xsd:integer ;
+	ov:csvHeader "CHOLESTEROL_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx23 .
+
+_:node17u6vk27qx24 ov:csvCol "22"^^xsd:integer ;
+	ov:csvHeader "THIAMIN_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx24 .
+
+_:node17u6vk27qx25 ov:csvCol "23"^^xsd:integer ;
+	ov:csvHeader "FOLICACID_MCG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx25 .
+
+_:node17u6vk27qx26 ov:csvCol "24"^^xsd:integer ;
+	ov:csvHeader "VITAMINC_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx26 .
+
+_:node17u6vk27qx27 ov:csvCol "25"^^xsd:integer ;
+	ov:csvHeader "DIETARYFIBER_G" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx27 .
+
+_:node17u6vk27qx28 ov:csvCol "26"^^xsd:integer ;
+	ov:csvHeader "RATION" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx28 .
+
+_:node17u6vk27qx29 ov:csvCol "27"^^xsd:integer ;
+	ov:csvHeader "PHOSPHOROUS_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx29 .
+
+_:node17u6vk27qx30 ov:csvCol "28"^^xsd:integer ;
+	ov:csvHeader "MAGNESIUM_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx30 .
+
+_:node17u6vk27qx31 ov:csvCol "29"^^xsd:integer ;
+	ov:csvHeader "SODIUM_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx31 .
+
+_:node17u6vk27qx32 ov:csvCol "30"^^xsd:integer ;
+	ov:csvHeader "POTASSIUM_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx32 .
+
+_:node17u6vk27qx33 ov:csvCol "31"^^xsd:integer ;
+	ov:csvHeader "VITAMINA_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx33 .
+
+_:node17u6vk27qx34 ov:csvCol "32"^^xsd:integer ;
+	ov:csvHeader "IRON_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx34 .
+
+_:node17u6vk27qx35 ov:csvCol "33"^^xsd:integer ;
+	ov:csvHeader "NIACIN_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx35 .
+
+_:node17u6vk27qx36 ov:csvCol "34"^^xsd:integer ;
+	ov:csvHeader "TOTALFAT_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx36 .
+
+_:node17u6vk27qx37 ov:csvCol "35"^^xsd:integer ;
+	ov:csvHeader "MENU" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx37 .
+
+_:node17u6vk27qx38 ov:csvCol "36"^^xsd:integer ;
+	ov:csvHeader "RIBOFLAVIN_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx38 .
+
+_:node17u6vk27qx39 ov:csvCol "37"^^xsd:integer ;
+	ov:csvHeader "PROTEIN_G" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx39 .
+
+_:node17u6vk27qx40 ov:csvCol "38"^^xsd:integer ;
+	ov:csvHeader "TRANSFAT_G" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx40 .
+
+_:node17u6vk27qx41 ov:csvCol "39"^^xsd:integer ;
+	ov:csvHeader "CHOLESTEROL_DV" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx41 .
+
+_:node17u6vk27qx42 ov:csvCol "40"^^xsd:integer ;
+	ov:csvHeader "VITAMINC_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx42 .
+
+_:node17u6vk27qx43 ov:csvCol "41"^^xsd:integer ;
+	ov:csvHeader "VITAMINA_IU" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx43 .
+
+_:node17u6vk27qx44 ov:csvCol "42"^^xsd:integer ;
+	ov:csvHeader "ZINC_MG" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx44 .
+
+_:node17u6vk27qx45 ov:csvCol "43"^^xsd:integer ;
+	ov:csvHeader "ITEMTYPE" ;
+	conversion:comment "" ;
+	conversion:range rdfs:Literal .
+
+_:node17u6vk27qx1 conversion:enhance _:node17u6vk27qx45 .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> conversion:conversion_process _:node17u6vk27qx1 .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/subset/meta> a military-nutrition_vocab:Dataset , conversion:Dataset , conversion:MetaDataset , void:Dataset ;
+	conversion:base_uri "https://github.com/ewpatton/dodhackathon/tree/master/rdf" ;
+	conversion:source_identifier "military-nutrition" ;
+	conversion:dataset_identifier "mre" ;
+	dcterms:modified "2013-06-28T23:29:02.271-05:00"^^xsd:dateTime ;
+	foaf:isPrimaryTopicOf <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset_page/mre/subset/meta> ;
+	void:dataDump <https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/file/mre/version/2013/conversion/military-nutrition-mre-2013.void.ttl.gz> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> conversion:num_triples "766"^^xsd:integer ;
+	void:triples "766"^^xsd:integer ;
+	<http://www.w3.org/ns/prov#wasGeneratedBy> provenance_raw:translationActivity_087ca2ef-7c3b-4b1a-b05e-57d096df004f .
+
+provenance_raw:translationActivity_087ca2ef-7c3b-4b1a-b05e-57d096df004f a <http://www.w3.org/ns/prov#Activity> , <http://provenanceweb.org/ns/pml#TranslationActivity> ;
+	conversion:triples_per_minute "102818.79194630873"^^xsd:double ;
+	<http://www.w3.org/ns/prov#used> raw:carbohydrates_g , void:inDataset , raw:calories , raw:dietaryfiber_dv , ov:csvRow , raw:folicacid_mcg , raw:vitaminc_mg , dcterms:isReferencedBy , raw:itemtype , raw:carbohydrates_dv , raw:thiamin_mg , raw:calcium_mg , raw:cholesterol_mg , raw:sugars_g , raw:saturatedfat_g , raw:transfat_g , raw:vitamink_mcg , raw:cholesterol_dv , raw:vitamina_dv , raw:calcium_dv , raw:zinc_mg , raw:iron_mg , raw:riboflavin_mg , raw:weight , raw:selenium_mcg , raw:sodium_dv , raw:vitamine_mg , raw:ration , raw:saturatedfat_dv , raw:menu , raw:vitamina_iu , raw:vitaminc_dv , raw:protein_g , raw:totalfat_dv , raw:vitaminb6_mg , raw:phosphorous_mg , raw:vitaminb12_mcg , raw:magnesium_mg , raw:iodine_mcg , raw:iron_dv , raw:totalfat_g , raw:sodium_mg , raw:potassium_mg , raw:item , raw:niacin_mg , raw:dietaryfiber_g ;
+	void:vocabulary <https://github.com/ewpatton/dodhackathon/tree/master/rdf> , <http://rdfs.org/ns/void#> , <http://open.vocab.org/terms/> , <http://purl.org/dc/terms/> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/subset/meta> conversion:uses_predicate ov:csvRow , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> , void:dataDump , conversion:VersionedDataset , rdfs:label , foaf:topic , foaf:isPrimaryTopicOf , dcterms:author , doap:implements , pmlj:hasInferenceEngine , dcterms:identifier , doap:revision , dcterms:modified , vann:preferredNamespaceUri , rdfs:isDefinedBy , doap:helper , conversion:uses_predicate , ov:csvCol , doap:audience , doap:description , dcterms:format , doap:documenter , conversion:conversion_identifier , rdfs:range , conversion:version_identifier , pmlp:hasFormat , doap:homepage , conversion:num_triples , doap:shortdesc , pmlj:hasConclusion , dcterms:isReferencedBy , pmlj:hasAntecedentList , foaf:primaryTopic , conversion:base_uri , <http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> , void:exampleResource , conversion:dataset_identifier , rdf:type , void:subset , <http://www.w3.org/2000/10/swap/pim/contact#preferredURI> , void:triples , doap:browse , doap:developer , ov:csvHeader , rdfs:seeAlso , doap:maintainer , conversion:source_identifier , conversion:LayerDataset , dcterms:contributor , doap:platform , vann:preferredNamespacePrefix , pmlj:isConsequentOf , <http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> , void:vocabulary , dcterms:version ;
+	void:vocabulary <http://open.vocab.org/terms/> , <http://inference-web.org/2.1exper/pml-provenance.owl#> , <http://rdfs.org/ns/void#> , <http://purl.org/twc/vocab/conversion/> , <http://www.w3.org/2000/01/rdf-schema#> , <http://xmlns.com/foaf/0.1/> , <http://purl.org/dc/terms/> , <http://usefulinc.com/ns/doap#> , <http://inference-web.org/2.0/pml-justification.owl#> , <http://purl.org/vocab/vann/> , <http://inference-web.org/2.0/pml-provenance.owl#> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#> , <http://www.w3.org/2000/10/swap/pim/contact#> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedent> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+void:dataDump rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+conversion:VersionedDataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+rdfs:label rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+foaf:topic rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://xmlns.com> .
+
+foaf:isPrimaryTopicOf rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://xmlns.com> .
+
+dcterms:author rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+doap:implements rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+pmlj:hasInferenceEngine rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+dcterms:identifier rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+doap:revision rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+dcterms:modified rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+vann:preferredNamespaceUri rdfs:isDefinedBy <http://purl.org/vocab/vann/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/vocab> .
+
+rdfs:isDefinedBy rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+doap:helper rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+conversion:uses_predicate <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+ov:csvCol rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://open.vocab.org> .
+
+doap:audience rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+doap:description rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+dcterms:format rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+doap:documenter rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+conversion:conversion_identifier <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+rdfs:range rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+conversion:version_identifier <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+pmlp:hasFormat rdfs:isDefinedBy <http://inference-web.org/2.0/pml-provenance.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+doap:homepage rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+conversion:num_triples <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+doap:shortdesc rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+pmlj:hasConclusion rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+pmlj:hasAntecedentList rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+foaf:primaryTopic rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://xmlns.com> .
+
+conversion:base_uri <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasAntecedentRole> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+void:exampleResource rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+conversion:dataset_identifier <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+rdf:type rdfs:isDefinedBy <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+void:subset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+<http://www.w3.org/2000/10/swap/pim/contact#preferredURI> rdfs:isDefinedBy <http://www.w3.org/2000/10/swap/pim/contact#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+void:triples rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+doap:browse rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+doap:developer rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+ov:csvHeader rdfs:isDefinedBy <http://open.vocab.org/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://open.vocab.org> .
+
+rdfs:seeAlso rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org> .
+
+doap:maintainer rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+conversion:source_identifier <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+conversion:LayerDataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+dcterms:contributor rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+doap:platform rdfs:isDefinedBy <http://usefulinc.com/ns/doap#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://usefulinc.com> .
+
+vann:preferredNamespacePrefix rdfs:isDefinedBy <http://purl.org/vocab/vann/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/vocab> .
+
+pmlj:isConsequentOf rdfs:isDefinedBy <http://inference-web.org/2.0/pml-justification.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+<http://inference-web.org/2.1exper/pml-provenance.owl#hasRole> rdfs:isDefinedBy <http://inference-web.org/2.1exper/pml-provenance.owl#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://inference-web.org> .
+
+void:vocabulary rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+dcterms:version rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/dc> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/subset/meta> conversion:uses_class void:Dataset , foaf:Agent , conversion:MetaDataset , conversion:DatasetSample , conversion:AbstractDataset , void:DatasetDescription , conversion:Dataset , military-nutrition_vocab:Dataset ;
+	void:vocabulary <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+void:Dataset rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+foaf:Agent rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://xmlns.com> .
+
+conversion:MetaDataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+conversion:DatasetSample <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+conversion:AbstractDataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+void:DatasetDescription rdfs:isDefinedBy <http://rdfs.org/ns/void#> ;
+	<http://www.w3.org/ns/prov#wasAttributedTo> <http://rdfs.org> .
+
+conversion:Dataset <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/twc> .
+
+military-nutrition_vocab:Dataset rdfs:isDefinedBy <https://github.com/ewpatton/dodhackathon/tree/master/rdf> .
+
+<https://github.com/ewpatton/dodhackathon/tree/master/rdf/source/military-nutrition/dataset/mre/version/2013/conversion/raw> rdfs:comment "hash: 180ef3090fa1b0f0b1618d67d779b7963348ce64d0f" .

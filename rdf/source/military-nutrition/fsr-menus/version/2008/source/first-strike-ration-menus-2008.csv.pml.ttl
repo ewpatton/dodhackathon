@@ -1,0 +1,199 @@
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix pmlp:       <http://inference-web.org/2.0/pml-provenance.owl#> .
+@prefix pmlj:       <http://inference-web.org/2.0/pml-justification.owl#> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix sioc:       <http://rdfs.org/sioc/ns#> .
+@prefix oboro:      <http://obofoundry.org/ro/ro.owl#> .
+@prefix oprov:      <http://openprovenance.org/ontology#> .
+@prefix hartigprov: <http://purl.org/net/provenance/ns#> .
+@prefix irw:        <http://www.ontologydesignpatterns.org/ont/web/irw.owl#> .
+@prefix nfo:        <http://www.semanticdesktop.org/ontologies/nfo/#> .
+@prefix conv:       <http://purl.org/twc/vocab/conversion/> .
+@prefix httphead:   <http://inference-web.org/registry/MPR/HTTP_1_1_HEAD.owl#> .
+@prefix httpget:    <http://inference-web.org/registry/MPR/HTTP_1_1_GET.owl#> .
+@prefix httppost:   <http://inference-web.org/registry/MPR/HTTP_1_1_POST.owl#> .
+@prefix prov:       <http://www.w3.org/ns/prov#> .
+
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix sioc:    <http://rdfs.org/sioc/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+
+
+<http://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv>
+   a pmlp:Source, prov:Entity;
+   irw:redirectsTo <https://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv>;
+.
+
+<https://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv>
+   a pmlp:Source, prov:Entity;
+.
+
+<first-strike-ration-menus-2008.csv>
+   a nfo:FileDataObject, prov:Entity, pmlp:Information;
+   prov:wasQuotedFrom      <https://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv>;
+   prov:qualifiedQuotation <quotation_aa716918-cb9f-46a4-bbb0-685fe66a0205>;
+   pmlp:hasReferenceSourceUsage <sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_content>;
+.
+<first-strike-ration-menus-2008.csv>
+   a nfo:FileDataObject;
+   nfo:fileName "first-strike-ration-menus-2008.csv";
+   nfo:hasHash <md5_c04811e6a5c3b26c83a86f9f90200db5_time_1372473433>;
+.
+<md5_c04811e6a5c3b26c83a86f9f90200db5_time_1372473433>
+   a nfo:FileHash; 
+   dcterms:date      "2013-06-28T22:37:13-04:00"^^xsd:dateTime;
+   nfo:hashAlgorithm "md5";
+   nfo:hashValue     "c04811e6a5c3b26c83a86f9f90200db5";
+.
+
+<nodeSetaa716918-cb9f-46a4-bbb0-685fe66a0205_content>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <first-strike-ration-menus-2008.csv>;
+   pmlj:isConsequentOf <inferenceStepaa716918-cb9f-46a4-bbb0-685fe66a0205_content>;
+.
+<inferenceStepaa716918-cb9f-46a4-bbb0-685fe66a0205_content>
+   a pmlj:InferenceStep;
+   pmlj:hasIndex 0;
+   pmlj:hasAntecedentList ();
+   pmlj:hasSourceUsage     <sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_content>;
+   pmlj:hasInferenceEngine conv:curl_md5_68747d1ce7649146fec40489f72105a2;
+   pmlj:hasInferenceRule   httpget:HTTP_1_1_GET;
+   oboro:has_agent          [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+   hartigprov:involvedActor [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+.
+
+<quotation_aa716918-cb9f-46a4-bbb0-685fe66a0205>
+   a prov:Quotation;
+   prov:entity <https://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv>;
+   prov:atTime "2013-06-28T22:37:13-04:00"^^xsd:dateTime;
+.
+
+<sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_content>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <https://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv>;
+   pmlp:hasUsageDateTime "2013-06-28T22:37:13-04:00"^^xsd:dateTime;
+.
+
+<wasControlledByaa716918-cb9f-46a4-bbb0-685fe66a0205_content>
+   a oprov:WasControlledBy;
+   oprov:cause  [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+   oprov:effect <inferenceStepaa716918-cb9f-46a4-bbb0-685fe66a0205_content>;
+   oprov:endTime "2013-06-28T22:37:13-04:00"^^xsd:dateTime;
+.
+ 
+<infoaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>
+   a pmlp:Information, conv:HTTPHeader;
+   pmlp:hasRawString """HTTP/1.1 301 Moved Permanently
+Server: Varnish
+Retry-After: 0
+Location: https://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv
+Content-Length: 0
+Accept-Ranges: bytes
+Date: Sat, 29 Jun 2013 02:37:12 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: close
+X-Served-By: cache-v43-ASH
+X-Cache: MISS
+X-Cache-Hits: 0
+""";
+   pmlp:hasReferenceSourceUsage <sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>;
+.
+ 
+<nodeSetaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <infoaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>;
+   pmlj:isConsequentOf <inferenceStepaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>;
+.
+<inferenceStepaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>
+   a pmlj:InferenceStep;
+   pmlj:hasIndex 0;
+   pmlj:hasAntecedentList ();
+   pmlj:hasSourceUsage     <sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>;
+   pmlj:hasInferenceEngine conv:curl_md5_68747d1ce7649146fec40489f72105a2;
+   pmlj:hasInferenceRule   httphead:HTTP_1_1_HEAD;
+   oboro:has_agent          [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+   hartigprov:involvedActor [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+.
+
+<sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <http://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv>;
+   pmlp:hasUsageDateTime "2013-06-28T22:37:13-04:00"^^xsd:dateTime;
+.
+<wasControlledByaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>
+   a oprov:WasControlledBy;
+   oprov:cause  [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+   oprov:effect <nodeSetaa716918-cb9f-46a4-bbb0-685fe66a0205_url_header>;
+   oprov:endTime "2013-06-28T22:37:13-04:00"^^xsd:dateTime;
+.
+
+<infoaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>
+   a pmlp:Information, conv:HTTPHeader;
+   pmlp:hasRawString """HTTP/1.1 200 OK
+Date: Sat, 29 Jun 2013 02:37:12 GMT
+Server: GitHub.com
+Content-Type: text/plain; charset=utf-8
+Status: 200 OK
+X-RateLimit-Limit: 100
+X-RateLimit-Remaining: 100
+X-Frame-Options: deny
+Access-Control-Allow-Origin: https://render.github.com
+X-Content-Type-Options: nosniff
+Content-Disposition: inline
+Content-Transfer-Encoding: binary
+X-Runtime: 14
+ETag: "5dfab4247b844f7115096d303be3684e"
+Content-Length: 12218
+Accept-Ranges: bytes
+Via: 1.1 varnish
+Age: 0
+X-Served-By: cache-v36-ASH
+X-Cache: HIT
+X-Cache-Hits: 1
+Vary: Accept-Encoding
+Cache-Control: private
+""";
+   pmlp:hasReferenceSourceUsage <sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>;
+.
+
+<nodeSetaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>
+   a pmlj:NodeSet;
+   pmlj:hasConclusion <infoaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>;
+   pmlj:isConsequentOf <inferenceStepaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>;
+.
+<inferenceStepaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>
+   a pmlj:InferenceStep;
+   pmlj:hasIndex 0;
+   pmlj:hasAntecedentList ();
+   pmlj:hasSourceUsage     <sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>;
+   pmlj:hasInferenceEngine conv:curl_md5_68747d1ce7649146fec40489f72105a2;
+   pmlj:hasInferenceRule   httphead:HTTP_1_1_HEAD;
+   oboro:has_agent          [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+   hartigprov:involvedActor [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+.
+
+<sourceUsageaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>
+   a pmlp:SourceUsage;
+   pmlp:hasSource        <https://raw.github.com/ewpatton/dodhackathon/master/csv/first-strike-ration-menus-2008.csv>;
+   pmlp:hasUsageDateTime "2013-06-28T22:37:13-04:00"^^xsd:dateTime;
+.
+<wasControlledByaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>
+   a oprov:WasControlledBy;
+   oprov:cause  [ a foaf:OnlineAccount; foaf:accountName "oshani" ];
+   oprov:effect <inferenceStepaa716918-cb9f-46a4-bbb0-685fe66a0205_redirected_url_header>;
+   oprov:endTime "2013-06-28T22:37:13-04:00"^^xsd:dateTime;
+.
+
+conv:curl_md5_68747d1ce7649146fec40489f72105a2
+   a prov:Agent, pmlp:InferenceEngine, conv:Curl;
+   dcterms:identifier "md5_68747d1ce7649146fec40489f72105a2";
+   dcterms:description """curl 7.29.0 (x86_64-apple-darwin12.2.0) libcurl/7.29.0 OpenSSL/1.0.1e zlib/1.2.7 libidn/1.26
+Protocols: dict file ftp ftps gopher http https imap imaps pop3 pop3s rtsp smtp smtps telnet tftp 
+Features: IDN IPv6 Largefile NTLM NTLM_WB SSL libz TLS-SRP """;
+.
+
+conv:Curl rdfs:subClassOf pmlp:InferenceEngine .
