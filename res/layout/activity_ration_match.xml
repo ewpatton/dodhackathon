@@ -189,5 +189,32 @@
 				android:background="@drawable/separator">
 			</LinearLayout>
 		</LinearLayout>
-	</LinearLayout>
+        <LinearLayout android:id="@+id/help_entry"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:background="@drawable/selector" android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/layout_bottom_margin">
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:paddingRight="16dp"
+                    android:contentDescription="about"
+                    android:src="@drawable/help" />
+                <TextView android:text="Help" android:textSize="18sp"
+                    android:textStyle="bold" android:gravity="center_vertical"
+                    android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <TextView android:text=">" android:textSize="@dimen/details_arrow_size"
+                    android:textStyle="bold" android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:gravity="right" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_shadow_margin"
+                android:background="@drawable/separator">
+            </LinearLayout>
+        </LinearLayout>
+			</LinearLayout>
 </ScrollView>

@@ -30,44 +30,65 @@
             tools:listitem="@android:layout/simple_spinner_dropdown_item" />
     </LinearLayout>
 
-        <EditText
-        android:id="@+id/totalCals"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Target Calories"
-        android:inputType="number" >
-
-        <requestFocus />
-    </EditText>
-    <EditText
-        android:id="@+id/totalFat"
+        android:layout_height="wrap_content" >
+        <TextView android:text="Target Calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+	    <EditText
+	        android:id="@+id/totalCals"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Target Calories"
+	        android:inputType="number" >
+	    </EditText>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Total Fat"
-        android:inputType="number" >
-
-        <requestFocus />
-    </EditText>
-    <EditText
-        android:id="@+id/totalCarbohydrates"
+        android:layout_height="wrap_content" >
+        <TextView android:text="Total Fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+	    <EditText
+	        android:id="@+id/totalFat"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Total Fat"
+	        android:inputType="number" >
+	    </EditText>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Total Carbohydrates"
-        android:inputType="number" >
-
-        <requestFocus />
-    </EditText>
-    <EditText
-        android:id="@+id/totalProtein"
+        android:layout_height="wrap_content" >
+        <TextView android:text="Total Carbohydrates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+	    <EditText
+	        android:id="@+id/totalCarbohydrates"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Total Carbohydrates"
+	        android:inputType="number" >
+	    </EditText>
+	</LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Total Proteins"
-        android:inputType="number" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_height="wrap_content" >
+        <TextView android:text="Total Protein"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+	    <EditText
+	        android:id="@+id/totalProtein"
+	        android:layout_width="100sp"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="Total Protein"
+	        android:inputType="number" >
+	    </EditText>
+    </LinearLayout>
 </LinearLayout>
