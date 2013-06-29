@@ -8,4 +8,12 @@
             <string name="off_duty">Off Duty</string>
         </item>
     </string-array>
+    <string-array name="gender">
+        <item>
+            <string name="male">Male</string>
+        </item>
+        <item>
+            <string name="female">Female</string>
+        </item>
+    </string-array>
 </resources>

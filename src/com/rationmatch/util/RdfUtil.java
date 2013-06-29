@@ -222,6 +222,7 @@ public final class RdfUtil {
       return null;
     }
     try {
+      conn.addRequestProperty("Accept", "application/sparql-results+json");
       conn.setDoInput(true);
       conn.connect();
       InputStream is = conn.getInputStream();
@@ -232,7 +233,7 @@ public final class RdfUtil {
       }
       is.close();
     } catch(IOException e) {
-      Log.w(LOG_TAG, "Unable to read results from server.");
+      Log.w(LOG_TAG, "Unable to read results from server.", e);
     }
     JsonNode result = null;
     try {

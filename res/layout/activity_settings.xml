@@ -9,12 +9,26 @@
     android:orientation="vertical"
     tools:context=".Settings" >
 
-    <Spinner
-        android:id="@+id/spinner1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/duty_status"
-        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/duty_status"
+            tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/gender"
+            tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+    </LinearLayout>
 
         <EditText
         android:id="@+id/totalCals"
