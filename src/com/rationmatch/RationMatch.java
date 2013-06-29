@@ -5,7 +5,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.AdapterView;
+=======
+import android.view.View.OnClickListener;
+import android.widget.Toast;
+>>>>>>> e3519399071c887079e366ed132326ad6f2d4590
 
 public class RationMatch extends Activity {
 
@@ -13,6 +18,13 @@ public class RationMatch extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_ration_match);
+    View v = findViewById(R.id.lets_eat_entry);
+    v.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Toast.makeText(RationMatch.this, "Let's Eat", Toast.LENGTH_LONG).show();
+      }
+    });
   }
 
   @Override
