@@ -5,21 +5,28 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Toast;
 
 public class RationMatch extends Activity {
+
+  protected OnClickListener createClickListener(final int viewId) {
+    return new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        RationMatch.this.onViewClicked(viewId, v);
+      }
+    };
+  }
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_ration_match);
-    View v = findViewById(R.id.lets_eat_entry);
-    v.setOnClickListener(new OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Toast.makeText(RationMatch.this, "Let's Eat", Toast.LENGTH_LONG).show();
-      }
-    });
+    int[] viewsToBind = { R.id.overview_layout, R.id.lets_eat_entry,
+        R.id.history_entry, R.id.nutrient_reference_entry, R.id.settings_entry};
+    for(int i=0;i<viewsToBind.length;i++) {
+      View v = findViewById(viewsToBind[i]);
+      v.setOnClickListener(createClickListener(i));
+    }
   }
 
   @Override
@@ -29,4 +36,7 @@ public class RationMatch extends Activity {
     return true;
   }
 
+  protected void onViewClicked(int id, View view) {
+    
+  }
 }
