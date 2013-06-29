@@ -37,7 +37,17 @@ public class MenuInfo extends ListActivity {
     ProgressBarUtil util = new ProgressBarUtil(total_fat);
     util.setPrimaryColor(getResources().getColor(R.color.brown));
     util.setSecondaryColor(getResources().getColor(R.color.light_brown));
-    util.setDistance(30, 20);
+    util.setDistance(30, 10);
+    LinearLayout total_cals = (LinearLayout)header.findViewById(R.id.calorie_status);
+    util = new ProgressBarUtil(total_cals);
+    util.setPrimaryColor(getResources().getColor(R.color.blue));
+    util.setSecondaryColor(getResources().getColor(R.color.light_blue));
+    util.setDistance(50, 15);
+    LinearLayout total_protein = (LinearLayout)header.findViewById(R.id.protein_status);
+    util = new ProgressBarUtil(total_protein);
+    util.setPrimaryColor(getResources().getColor(R.color.red));
+    util.setSecondaryColor(getResources().getColor(R.color.pink));
+    util.setDistance(55, 20);
   }
 
   private static class MenuListAdapter implements ListAdapter {
