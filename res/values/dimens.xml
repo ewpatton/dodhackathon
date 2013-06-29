@@ -10,4 +10,5 @@
 
     <!-- Dimensions for the > arrow on the side of the screen -->
     <dimen name="details_arrow_size">24sp</dimen>
+    <dimen name="icon_size">64dp</dimen>
 </resources>

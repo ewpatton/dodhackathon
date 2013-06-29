@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    <TextView android:text="Hello world!"
-        android:layout_height="32sp"
-        android:layout_width="match_parent" />
-
+    <TextView android:text="Chili with Beans"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" />
+    <TextView android:text="MRE 2013 - Meal 1"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_width="fill_parent" />
+    <TextView android:text="Calories"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+    <include android:id="@+id/calorie_status"
+        layout="@layout/nutrient_consumption_bar" />
+    <TextView android:text="Total Fat"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+    <include android:id="@+id/total_fat_status"
+        layout="@layout/nutrient_consumption_bar" />
+    <TextView android:text="Carbohydrates"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+    <include android:id="@+id/carbohydrate_status"
+        layout="@layout/nutrient_consumption_bar" />
+    <TextView android:text="Protein"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+    <include android:id="@+id/protein_status"
+        layout="@layout/nutrient_consumption_bar" />
 </LinearLayout>
