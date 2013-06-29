@@ -47,6 +47,10 @@
             android:name="com.rationmatch.MenuInfo"
             android:label="@string/title_activity_menu_info" >
         </activity>
+        <activity
+            android:name="com.rationmatch.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
 
 </manifest>

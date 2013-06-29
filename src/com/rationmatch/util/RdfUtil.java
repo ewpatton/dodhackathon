@@ -36,7 +36,7 @@ public final class RdfUtil {
   private static final String XSD_INTEGER = XSD_NS+"integer";
   public static final String US_ARMY_DATA = "http://rationmatch.com";
   public static final String FDA_FOOD_PYRAMID = "http://logd.tw.rpi.edu/source/data-gov/dataset/1294/version/1st-anniversary";
-  public static final String USDA_NUTRIENT_DATABASE = "";
+  public static final String USDA_NUTRIENT_DATABASE = "http://semanticdiet/source/usda-gov/dataset/nutrient-database/";
 
   public static final class VariableBinding extends ArrayList<Object> {
     /**

@@ -78,11 +78,14 @@ public class RationMatch extends Activity {
     case R.id.lets_eat_entry:
     	i.setClass(this.getApplicationContext(), Menus.class);
     	break;
-    case R.id.settings_entry:
+    case R.id.trade_entry:
       i.setClass(this.getApplicationContext(), MenuInfo.class);
       i.putExtra("menu", MenuCollectionFactory
           .listMenusInCollection(getApplicationContext(),
               "MRE 2013").get(0));
+      break;
+    case R.id.settings_entry:
+      i.setClass(this.getApplicationContext(), Settings.class);
       break;
     default:
       return;

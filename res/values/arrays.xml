@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="duty_status">
+        <item>
+            <string name="on_duty">On Duty</string>
+        </item>
+        <item>
+            <string name="off_duty">Off Duty</string>
+        </item>
+    </string-array>
+</resources>
