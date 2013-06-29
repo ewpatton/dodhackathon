@@ -5,12 +5,14 @@ import java.util.Map;
 
 import com.rationmatch.model.Menu;
 import com.rationmatch.model.MenuItem;
+import com.rationmatch.util.ProgressBarUtil;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckedTextView;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.app.Activity;
@@ -31,6 +33,11 @@ public class MenuInfo extends ListActivity {
     lv.addHeaderView(header, null, false);
     menu = new Menu((Map<String, Object>)getIntent().getSerializableExtra("menu"));
     setListAdapter(new MenuListAdapter(menu, this));
+    LinearLayout total_fat = (LinearLayout)header.findViewById(R.id.total_fat_status);
+    ProgressBarUtil util = new ProgressBarUtil(total_fat);
+    util.setPrimaryColor(getResources().getColor(R.color.brown));
+    util.setSecondaryColor(getResources().getColor(R.color.light_brown));
+    util.setDistance(30, 20);
   }
 
   private static class MenuListAdapter implements ListAdapter {

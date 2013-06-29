@@ -6,12 +6,15 @@
     android:background="@color/gray"
     android:orientation="horizontal" >
     <LinearLayout
+        android:tag="primary"
         android:layout_width="0px" android:layout_height="match_parent"
         android:background="@color/green" android:layout_weight="55" />
     <LinearLayout
+        android:tag="secondary"
         android:layout_width="0px" android:layout_height="match_parent"
         android:background="@color/light_green" android:layout_weight="30" />
     <LinearLayout
+        android:tag="unused"
         android:layout_width="0px" android:layout_height="match_parent"
         android:background="@android:color/transparent" android:layout_weight="15" />
 </LinearLayout>
